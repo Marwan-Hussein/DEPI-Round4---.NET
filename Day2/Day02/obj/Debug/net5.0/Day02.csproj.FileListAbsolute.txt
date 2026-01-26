@@ -1,0 +1,15 @@
+B:\programming\VSCode projects\C#\Day02\bin\Debug\net5.0\Day02.exe
+B:\programming\VSCode projects\C#\Day02\bin\Debug\net5.0\Day02.deps.json
+B:\programming\VSCode projects\C#\Day02\bin\Debug\net5.0\Day02.runtimeconfig.json
+B:\programming\VSCode projects\C#\Day02\bin\Debug\net5.0\Day02.runtimeconfig.dev.json
+B:\programming\VSCode projects\C#\Day02\bin\Debug\net5.0\Day02.dll
+B:\programming\VSCode projects\C#\Day02\bin\Debug\net5.0\Day02.pdb
+B:\programming\VSCode projects\C#\Day02\obj\Debug\net5.0\Day02.GeneratedMSBuildEditorConfig.editorconfig
+B:\programming\VSCode projects\C#\Day02\obj\Debug\net5.0\Day02.AssemblyInfoInputs.cache
+B:\programming\VSCode projects\C#\Day02\obj\Debug\net5.0\Day02.AssemblyInfo.cs
+B:\programming\VSCode projects\C#\Day02\obj\Debug\net5.0\Day02.csproj.CoreCompileInputs.cache
+B:\programming\VSCode projects\C#\Day02\obj\Debug\net5.0\Day02.dll
+B:\programming\VSCode projects\C#\Day02\obj\Debug\net5.0\refint\Day02.dll
+B:\programming\VSCode projects\C#\Day02\obj\Debug\net5.0\Day02.pdb
+B:\programming\VSCode projects\C#\Day02\obj\Debug\net5.0\Day02.genruntimeconfig.cache
+B:\programming\VSCode projects\C#\Day02\obj\Debug\net5.0\ref\Day02.dll
