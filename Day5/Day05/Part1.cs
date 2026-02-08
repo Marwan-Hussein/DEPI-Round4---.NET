@@ -41,9 +41,18 @@ namespace Day05
             WriteLine();
         }
 
+        // problem 13
+        public static int SumArr(params int[] arr)
+        {
+            int sum = 0;
+            foreach (int num in arr)
+                sum += num;
+            return sum;
+        }
+
         public static void Run()
         {
-            /*#region p1
+            #region p1
             problem(1);
             Write("n1: ");
             int.TryParse(ReadLine(), out int n1);
@@ -63,7 +72,7 @@ namespace Day05
                 WriteLine("Operation complete");
             }
             #endregion
-            
+
             #region p2
             problem(2);
             WriteLine(TestDefensiveCode());
@@ -89,12 +98,12 @@ namespace Day05
                 WriteLine("Out of the range ya rayes!");
             }
             #endregion
-            
+
             #region p5
             problem(5);
             int[,] _2dArr = new int[3, 3];
             WriteLine("enter your Values as 3x3 matrix: ");
-            for(int i=0; i < 3; ++i)
+            for (int i = 0; i < 3; ++i)
             {
                 int[] row = Array.ConvertAll(ReadLine().Split(' '), int.Parse);
                 for (int j = 0; j < 3; ++j)
@@ -103,10 +112,10 @@ namespace Day05
             WriteLine();
 
             int[] colSum = new int[_2dArr.GetLength(0)];
-            for(int i=0;i < _2dArr.Length / _2dArr.GetLength(0); ++i)
+            for (int i = 0; i < _2dArr.Length / _2dArr.GetLength(0); ++i)
             {
-                int rowSum=0;
-                for(int j=0; j < _2dArr.GetLength(0); ++j)
+                int rowSum = 0;
+                for (int j = 0; j < _2dArr.GetLength(0); ++j)
                 {
                     Write(_2dArr[i, j] + " ");
                     rowSum += _2dArr[i, j];
@@ -119,54 +128,75 @@ namespace Day05
             foreach (int sm in colSum)
                 Write(sm + " ");
             #endregion
-            
+
             #region p6
             problem(6);
             int[][] jagArr = new int[3][];
-            for(int i = 0; i < 3; ++i)
+            for (int i = 0; i < 3; ++i)
             {
                 Write($"elements row{i}: ");
                 jagArr[i] = Array.ConvertAll(ReadLine().Split(' '), int.Parse);
             }
             WriteLine();
 
-            for (int i = 0; i < 3; ++i) {
+            for (int i = 0; i < 3; ++i)
+            {
                 for (int j = 0; j < jagArr[i].Length; j++)
                     Write(jagArr[i][j] + " ");
                 WriteLine();
             }
             #endregion
-            */
+
             #region p7
             problem(7);
-            string? str1;
+            Write("enter a string (or press enter to skip): ");
+            string? str1 = ReadLine();
+            string? str2 = string.IsNullOrEmpty(str1) ? null : str1;
+            WriteLine($"with (!): {str2!}");
             #endregion
 
             #region p8
             problem(8);
+            int val = 42;
+            object obj = val; // boxing
+            WriteLine($"Boxed value: {obj}");
 
+            try
+            {
+                int unboxedVal = (int)obj; // unboxing
+                WriteLine($"Unboxed value: {unboxedVal}");
+
+                object obj2 = "Hello";
+                int invalidUnbox = (int)obj2; // This will throw an exception
+            }
+            catch (InvalidCastException ex)
+            {
+                WriteLine($"Invalid cast: {ex.Message}");
+            }
             #endregion
 
-            /*#region p9
+            #region p9
             problem(9);
             int sum9, mult;
-            SumAndMultiply(4, 5, out sum9,out mult);
+            SumAndMultiply(4, 5, out sum9, out mult);
             WriteLine($"Sum = {sum9}\nProduct = {mult}");
             #endregion
-            
+
             #region p10
             problem(10);
             Repeat("Maro ");
             Repeat("not Maro ", 4);
 
             #endregion
-            */
+
             #region p11
             problem(11);
-
+            int[]? nums = null;
+            int? len = nums?.Length;
+            WriteLine($"Length = {len}");
             #endregion
 
-            /*#region p12
+            #region p12
             problem(12);
             Write("enter a day number from 1 (monday) to 7 (sunday): ");
             int.TryParse(ReadLine(), out int dayNo);
@@ -183,11 +213,13 @@ namespace Day05
             };
             WriteLine(dayStr);
 
-            #endregion*/
+            #endregion
 
             #region p13
             problem(13);
-
+            WriteLine(SumArr(1, 2, 3, 4, 5));
+            int[] arr13 = { 1, 2, 3, 4, 5 };
+            WriteLine(SumArr(arr13));
             #endregion
         }
     }
