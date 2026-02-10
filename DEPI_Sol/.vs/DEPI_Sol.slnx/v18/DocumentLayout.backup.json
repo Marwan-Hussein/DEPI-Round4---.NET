@@ -3,7 +3,13 @@
   "WorkspaceRootPath": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50A6079A-B5E8-49CA-8FA0-D4FB89EBE510}|..\\Day4\\Day4\\Day4.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day4\\day4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E6AB6A9-C19E-4D94-8D26-C2B0B6686F53}|..\\Day6\\Day6\\Day6.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day6\\day6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95C38381-D66E-45E9-851D-DDF78B7F20E1}|..\\Day5\\Day05\\Day05.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day5\\day05\\forday6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E6AB6A9-C19E-4D94-8D26-C2B0B6686F53}|..\\Day6\\Day6\\Day6.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day6\\day6\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,23 +19,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "forDay6.cs",
+              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day5\\Day05\\forDay6.cs",
+              "RelativeDocumentMoniker": "..\\Day5\\Day05\\forDay6.cs",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day5\\Day05\\forDay6.cs",
+              "RelativeToolTip": "..\\Day5\\Day05\\forDay6.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T18:07:03.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day6\\Day6\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\Day6\\Day6\\Class1.cs",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day6\\Day6\\Class1.cs",
+              "RelativeToolTip": "..\\Day6\\Day6\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T15:51:03.52Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day4\\Day4\\Program.cs",
-              "RelativeDocumentMoniker": "..\\Day4\\Day4\\Program.cs",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day4\\Day4\\Program.cs*",
-              "RelativeToolTip": "..\\Day4\\Day4\\Program.cs*",
-              "ViewState": "AgIAAPAAAAAAAAAAAAAuwP0AAAA5AAAAAAAAAA==",
+              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day6\\Day6\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Day6\\Day6\\Program.cs",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day6\\Day6\\Program.cs*",
+              "RelativeToolTip": "..\\Day6\\Day6\\Program.cs*",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwEAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T19:22:18.511Z",
+              "WhenOpened": "2026-02-10T15:23:35.157Z",
               "EditorCaption": ""
             }
           ]
