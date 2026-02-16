@@ -1,47 +1,10 @@
 ﻿using static System.Console;
 using SharedLib;
-using static Day7.Calculator;
+using static Day7.Classes.Calculator;
 using Day7.Interfaces;
+using Day7.Classes;
 namespace Day7
 {
-    internal class Parent
-    {
-        public int X {  get; set; }
-        public int Y { get; set; }
-        public Parent(int x, int y)
-        {
-            X = x;
-            Y = y;
-            WriteLine("ctor from parent");
-        }
-        public override string ToString()
-        {
-            return $"({X}, {Y})";
-        }
-        public virtual int Product() { return X * Y; }
-        public int Sum() { return X + Y; }
-    }
-
-    internal class Child : Parent
-    {
-        public int Z { get; set; }
-        public Child(int x, int y, int z) : base(x,y)
-        {
-            Z = z;
-            WriteLine("ctor from child");
-        }
-
-        public override string ToString()
-        {
-            return $"({X}, {Y}, {Z})";
-        }
-        public new int Product() { return base.Product() * Z; }
-        //public override int Product() { return base.Product() * Z; }
-
-        //public override int Sum() { return base.Sum() + Z; } ERR: no virtual keyword
-        public new int Sum() { return base.Sum() + Z; }
-
-    }
     internal class Program
     {
         static void Main(string[] args)
@@ -108,17 +71,23 @@ namespace Day7
             
             #region p8
             General.problem(8);
-            
+            Car c8 = new Car();
+            c8.Move();
             #endregion
 
             #region p9
             General.problem(9);
-            
+            File f = new File();
+            f.Read();
+            f.Write();
             #endregion
-
+            
             #region p10
             General.problem(10);
-            
+            RectanglePb10 sh = new RectanglePb10(5.256,4);
+            sh.Draw();
+            WriteLine(sh.CalculateArea());
+           
             #endregion
 
         }

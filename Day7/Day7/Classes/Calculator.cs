@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Day7
+namespace Day7.Classes
 {
     internal static class Calculator
     {
