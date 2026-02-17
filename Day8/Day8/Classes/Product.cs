@@ -30,7 +30,7 @@ namespace Day8.Classes
         #endregion
         public override string ToString()
         {
-            return $"ID: {Id}\tName: {Name}\tPrice: {Price}\n";
+            return $"ID: {Id}\tName: {Name}\tPrice: {Price}";
         }
         public int CompareTo(object obj)
         {
