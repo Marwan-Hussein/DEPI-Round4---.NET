@@ -50,7 +50,7 @@ namespace Day8.Classes
             get => Round(Dimension1 + Dimension2 + Dimension3, 2);
         }
 
-        public TriangleShape(double d1, double d2, double d3)
+        public TriangleShape(double d1, double d2, double d3=1)
         {
             Dimension1 = d1;
             Dimension2 = d2;

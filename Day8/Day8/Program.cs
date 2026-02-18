@@ -55,7 +55,7 @@ namespace Day8
         }
 
         // selection sort
-        private static int minIndex<T>(T[] arr, int start)
+        private static int minIndex<T>(T[] arr, int start) where T : IComparable<T>
         {
             int minIdx = start;
             for(int i=start+1; i<arr.Length; ++i)
@@ -63,7 +63,7 @@ namespace Day8
                     minIdx = i;
             return minIdx;
         }
-        public static void SelectionSort<T>(ref T[] arr)
+        public static void SelectionSort<T>(ref T[] arr) where T : IComparable<T>
         {
             for(int i=0; i < arr.Length; ++i)
             {
@@ -74,7 +74,7 @@ namespace Day8
         }
         static void Main(string[] args)
         {
-            /*#region part1
+            #region part1
             Write("===  Part1  ====");
             #region pb1
             General.problem(1);
@@ -160,9 +160,9 @@ namespace Day8
             #endregion
 
             #endregion
-            */
+            
             #region part2
-            /*WriteLine("===  Part2  ====");
+            WriteLine("===  Part2  ====");
 
             #region shape series
             WriteLine("Square:");
@@ -171,8 +171,8 @@ namespace Day8
             WriteLine();
 
             WriteLine("Circle:");
-            IShapeSeries cir = new CircleSeries();
-            PrintTenShapes(cir);
+            IShapeSeries cir2 = new CircleSeries();
+            PrintTenShapes(cir2);
             #endregion
             #region sort shapes
             Shape__[] shapes =
@@ -187,7 +187,7 @@ namespace Day8
             Print(shapes);
             #endregion
             #region Shape hierarchy
-            GeoShape rec5 = new RectangleShape(5.5,6.25);
+            GeoShape rec5 = new RectangleShape(5.5, 6.25);
             WriteLine(rec5);
             WriteLine($"Area of Rectangle = {rec5.CalculateArea()}"); // 34.38
             WriteLine($"Perimeter of Rectangle = {rec5.Permeter}"); // 23.5
@@ -199,7 +199,6 @@ namespace Day8
             WriteLine($"Perimeter of Triangle = {tri5.Permeter}"); // 17
             #endregion
 
-            */
             #region selection sort
             GeoShape[] shapes_ =
             {
@@ -214,6 +213,12 @@ namespace Day8
             };
             SelectionSort(ref shapes_);
             Print(shapes_);
+            #endregion
+
+            #region factory dp
+            GeoShape rec6 = ShapeFactory.CreateShape("rectangle", 5.5, 6.25);
+            GeoShape tri6 = ShapeFactory.CreateShape("triangle", 2, 5);
+            //GeoShape cir6 = ShapeFactory.CreateShape("Circle", 4, 5);
             #endregion
 
             #endregion
