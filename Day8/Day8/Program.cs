@@ -55,15 +55,15 @@ namespace Day8
         }
 
         // selection sort
-        private static int minIndex(int[] arr, int start)
+        private static int minIndex<T>(T[] arr, int start)
         {
             int minIdx = start;
             for(int i=start+1; i<arr.Length; ++i)
-                if(arr[i] < arr[minIdx])
+                if(arr[i].CompareTo(arr[minIdx]) <0)
                     minIdx = i;
             return minIdx;
         }
-        public static void SelectionSort(ref int[] arr)
+        public static void SelectionSort<T>(ref T[] arr)
         {
             for(int i=0; i < arr.Length; ++i)
             {
@@ -186,7 +186,6 @@ namespace Day8
             Array.Sort(shapes);
             Print(shapes);
             #endregion
-            */
             #region Shape hierarchy
             GeoShape rec5 = new RectangleShape(5.5,6.25);
             WriteLine(rec5);
@@ -200,12 +199,23 @@ namespace Day8
             WriteLine($"Perimeter of Triangle = {tri5.Permeter}"); // 17
             #endregion
 
-            /*#region sorting
-            int[] arr = { 5, 2, 9, 1, 5, 6 };
-            SelectionSort(ref arr);
-            Print(arr);
-            #endregion
             */
+            #region selection sort
+            GeoShape[] shapes_ =
+            {
+                new RectangleShape(5.5,6.25),
+                new TriangleShape(2, 5, 10),
+
+                new RectangleShape(10,30),
+                new TriangleShape(20, 30, 20),
+
+                new RectangleShape(15.365,36.17),
+                new TriangleShape(25, 45, 50),
+            };
+            SelectionSort(ref shapes_);
+            Print(shapes_);
+            #endregion
+
             #endregion
         }
     }

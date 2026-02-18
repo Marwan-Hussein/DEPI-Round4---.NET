@@ -1,7 +1,8 @@
-﻿using static System.Math;
+﻿using System;
+using static System.Math;
 namespace Day8.Classes
 {
-    internal abstract class GeoShape
+    internal abstract class GeoShape : IComparable<GeoShape>
     { 
         public double Dimension1 { get; set; }
         public double Dimension2 { get; set; }
@@ -11,8 +12,18 @@ namespace Day8.Classes
 
         public override string ToString()
         {
-            return $"{GetType().Name}: (d1 , d2) = ({Dimension1} , {Dimension2}).";
+            return $"{GetType().Name}: (d1 , d2) = ({Dimension1} , {Dimension2})\tArea={CalculateArea()}";
         }
+
+        public int CompareTo(GeoShape shape)
+        {
+            if (shape == null)
+                return 1;
+            return (int)(CalculateArea() - shape.CalculateArea());
+        }
+        //public static bool operator <(GeoShape a, GeoShape b) { return a.CalculateArea() < b.CalculateArea(); }
+        //public static bool operator >(GeoShape a, GeoShape b) { return a.CalculateArea() > b.CalculateArea(); }
+
     }
 
     internal class RectangleShape : GeoShape
@@ -48,7 +59,7 @@ namespace Day8.Classes
 
         public override string ToString()
         {
-            return $"{GetType().Name}: (d1 , d2, d3) = ({Dimension1} , {Dimension2}, {Dimension3}).";
+            return $"{GetType().Name}: (d1 , d2, d3) = ({Dimension1} , {Dimension2}, {Dimension3})\tArea={CalculateArea()}";
         }
     }
 }
