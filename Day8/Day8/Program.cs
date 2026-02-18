@@ -188,14 +188,24 @@ namespace Day8
             #endregion
             */
             #region Shape hierarchy
+            GeoShape rec5 = new RectangleShape(5.5,6.25);
+            WriteLine(rec5);
+            WriteLine($"Area of Rectangle = {rec5.CalculateArea()}"); // 34.38
+            WriteLine($"Perimeter of Rectangle = {rec5.Permeter}"); // 23.5
+            WriteLine();
 
+            GeoShape tri5 = new TriangleShape(2, 5, 10);
+            WriteLine(tri5);
+            WriteLine($"Area of Triangle = {tri5.CalculateArea()}"); // 3.5
+            WriteLine($"Perimeter of Triangle = {tri5.Permeter}"); // 17
             #endregion
 
-            #region sorting
+            /*#region sorting
             int[] arr = { 5, 2, 9, 1, 5, 6 };
             SelectionSort(ref arr);
             Print(arr);
             #endregion
+            */
             #endregion
         }
     }

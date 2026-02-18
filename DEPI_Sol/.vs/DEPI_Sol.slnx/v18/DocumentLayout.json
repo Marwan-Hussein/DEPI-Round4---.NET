@@ -3,14 +3,17 @@
   "WorkspaceRootPath": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6FC55BE0-27C9-4846-B698-DC32D7DF8136}|..\\Day8\\Day8\\Day8.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day8\\day8\\classes\\geoshape.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC55BE0-27C9-4846-B698-DC32D7DF8136}|..\\Day8\\Day8\\Day8.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day8\\day8\\classes\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6FC55BE0-27C9-4846-B698-DC32D7DF8136}|..\\Day8\\Day8\\Day8.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day8\\day8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45F4794B-C26F-46A8-9F68-0131049D6DF7}|SharedLib\\SharedLib.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\depi_sol\\sharedlib\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45F4794B-C26F-46A8-9F68-0131049D6DF7}|SharedLib\\SharedLib.csproj|solutionrelative:sharedlib\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC55BE0-27C9-4846-B698-DC32D7DF8136}|..\\Day8\\Day8\\Day8.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day8\\day8\\classes\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FC55BE0-27C9-4846-B698-DC32D7DF8136}|..\\Day8\\Day8\\Day8.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day8\\day8\\classes\\shape__.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -77,37 +80,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "GeoShape.cs",
+              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Classes\\GeoShape.cs",
+              "RelativeDocumentMoniker": "..\\Day8\\Day8\\Classes\\GeoShape.cs",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Classes\\GeoShape.cs",
+              "RelativeToolTip": "..\\Day8\\Day8\\Classes\\GeoShape.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwCwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T12:13:39.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Product.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Classes\\Product.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Classes\\Product.cs",
               "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Classes\\Product.cs",
               "RelativeToolTip": "..\\Day8\\Day8\\Classes\\Product.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwCAAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T23:38:09.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Program.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Program.cs",
               "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Program.cs",
               "RelativeToolTip": "..\\Day8\\Day8\\Program.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAAkwMMAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAkwMgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T23:59:31.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Class1.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\SharedLib\\Class1.cs",
               "RelativeDocumentMoniker": "SharedLib\\Class1.cs",
@@ -115,12 +131,11 @@
               "RelativeToolTip": "SharedLib\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T16:22:18.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-16T16:22:18.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Shape__.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Classes\\Shape__.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Classes\\Shape__.cs",
@@ -128,12 +143,11 @@
               "RelativeToolTip": "..\\Day8\\Day8\\Classes\\Shape__.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAgwBIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T23:31:12.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T23:31:12.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Shape.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Classes\\Shape.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Classes\\Shape.cs",
@@ -141,12 +155,11 @@
               "RelativeToolTip": "..\\Day8\\Day8\\Classes\\Shape.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T23:30:51.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T23:30:51.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Book.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Classes\\Book.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Classes\\Book.cs",
@@ -154,12 +167,11 @@
               "RelativeToolTip": "..\\Day8\\Day8\\Classes\\Book.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAYwBIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T22:57:42.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T22:57:42.288Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ShapeSerieses.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Classes\\ShapeSerieses.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Classes\\ShapeSerieses.cs",
@@ -167,12 +179,11 @@
               "RelativeToolTip": "..\\Day8\\Day8\\Classes\\ShapeSerieses.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAAwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T23:11:16.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T23:11:16.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IShapeSeries.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Interfaces\\IShapeSeries.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Interfaces\\IShapeSeries.cs",
@@ -180,12 +191,11 @@
               "RelativeToolTip": "..\\Day8\\Day8\\Interfaces\\IShapeSeries.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T23:09:09.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T23:09:09.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ILogger.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Interfaces\\ILogger.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Interfaces\\ILogger.cs",
@@ -193,12 +203,11 @@
               "RelativeToolTip": "..\\Day8\\Day8\\Interfaces\\ILogger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T22:45:02.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T22:45:02.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ConsoleLogger.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Classes\\ConsoleLogger.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Classes\\ConsoleLogger.cs",
@@ -206,12 +215,11 @@
               "RelativeToolTip": "..\\Day8\\Day8\\Classes\\ConsoleLogger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T22:46:12.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T22:46:12.391Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Robot.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Classes\\Robot.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Classes\\Robot.cs",
@@ -223,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CarBike.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Classes\\CarBike.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Classes\\CarBike.cs",
@@ -235,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IVehicle.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day8\\Day8\\Interfaces\\IVehicle.cs",
               "RelativeDocumentMoniker": "..\\Day8\\Day8\\Interfaces\\IVehicle.cs",
@@ -247,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "File.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day7\\Day7\\Classes\\File.cs",
               "RelativeDocumentMoniker": "..\\Day7\\Day7\\Classes\\File.cs",
@@ -259,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ParentChild.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day7\\Day7\\Classes\\ParentChild.cs",
               "RelativeDocumentMoniker": "..\\Day7\\Day7\\Classes\\ParentChild.cs",
@@ -271,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IMoveable.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day7\\Day7\\Interfaces\\IMoveable.cs",
               "RelativeDocumentMoniker": "..\\Day7\\Day7\\Interfaces\\IMoveable.cs",
@@ -283,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Calculator.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day7\\Day7\\Classes\\Calculator.cs",
               "RelativeDocumentMoniker": "..\\Day7\\Day7\\Classes\\Calculator.cs",
@@ -295,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "IReadable.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day7\\Day7\\Interfaces\\IReadable.cs",
               "RelativeDocumentMoniker": "..\\Day7\\Day7\\Interfaces\\IReadable.cs",
@@ -307,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "IWritable.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day7\\Day7\\Interfaces\\IWritable.cs",
               "RelativeDocumentMoniker": "..\\Day7\\Day7\\Interfaces\\IWritable.cs",
@@ -319,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Car.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day7\\Day7\\Classes\\Car.cs",
               "RelativeDocumentMoniker": "..\\Day7\\Day7\\Classes\\Car.cs",
@@ -331,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "IShape.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day7\\Day7\\Interfaces\\IShape.cs",
               "RelativeDocumentMoniker": "..\\Day7\\Day7\\Interfaces\\IShape.cs",
@@ -343,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Program.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Test\\Program.cs",
               "RelativeDocumentMoniker": "..\\Test\\Program.cs",
