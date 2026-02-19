@@ -5,6 +5,8 @@ using SharedLib;
 using System;
 namespace Day8
 {
+    
+    
     internal class Program
     {
         public static void Print<T>(T[] arr)
