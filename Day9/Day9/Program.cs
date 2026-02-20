@@ -33,17 +33,17 @@ namespace Day9
             WriteLine(p1);
             WriteLine(p2);
             #endregion
-            */
             #region pb4
             problem(4);
             Child c1 = new Child();
             c1.Salary = (int)15e3;
             c1.DisplaySalary();
 
+            */
             #endregion
             #region pb5
             problem(5);
-
+            WriteLine(Utility.RecPermeter(10, 20));
             #endregion
             #region pb6
             problem(6);
