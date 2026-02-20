@@ -55,15 +55,16 @@ namespace Day9
 
 
             #endregion
-            */
             #region pb7
             problem(7);
             WriteLine(sizeof(Gender)); // 1 byte
             WriteLine(sizeof(int)); // 4 (the default)
             #endregion
+            */
             #region pb8
             problem(8);
-
+            WriteLine(Utility.Fehrenheit(10.5)); // 50.9
+            WriteLine(Utility.Celsius(73.45)); // 23.03
             #endregion
 
             #region pb9

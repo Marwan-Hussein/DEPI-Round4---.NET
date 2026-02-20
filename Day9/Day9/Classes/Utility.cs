@@ -1,7 +1,10 @@
-﻿namespace Day9.Classes
+﻿using static System.Math;
+namespace Day9.Classes
 {
-    internal class Utility
+    internal static class Utility
     {
         public static int RecPermeter(int w, int l) => 2 * (w + l);
+        public static double Fehrenheit(double C) => Round(C * (9 / 5d) + 32 ,2);
+        public static double Celsius(double F) => Round((F - 32) * (5 / 9d) ,2);
     }
 }
