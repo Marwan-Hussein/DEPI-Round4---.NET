@@ -86,7 +86,6 @@ namespace Day9
             WriteLine(Utility.Fehrenheit(10.5)); // 50.9
             WriteLine(Utility.Celsius(73.45)); // 23.03
             #endregion
-            */
 
             #region pb9
             problem(9);
@@ -96,9 +95,10 @@ namespace Day9
                 $"grade: {grade}" : "Invalid Grade");
             #endregion
 
+            */
             #region pb10
             problem(10);
-
+            WriteLine(Utility.Max("Maro", "Zero"));
             #endregion
 
             #region pb11
