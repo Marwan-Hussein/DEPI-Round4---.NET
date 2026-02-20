@@ -1,5 +1,8 @@
 ﻿using static System.Console;
 using static SharedLib.General;
+using Day9.Enums;
+using System;
+//using Day9.Classes;
 namespace Day9
 {
     internal class Program
@@ -8,16 +11,21 @@ namespace Day9
         {
             #region part1
             WriteLine("\n===========    Day 9 - Part 1    ===========");
-
-            #region pb1
+            /*#region pb1
             problem(1);
-
+            foreach(WeekDays day in Enum.GetValues(typeof(WeekDays)))
+            {
+                WriteLine($"Day: {day}\t Value: {(int)day}");
+            }
             #endregion
-
             #region pb2
             problem(2);
-
+            foreach(Grades g in Enum.GetValues(typeof(Grades)))
+            {
+                WriteLine($"Grade: {g}\t Value: {(short)g}");
+            }
             #endregion
+            */
             #region pb3
             problem(3);
 
