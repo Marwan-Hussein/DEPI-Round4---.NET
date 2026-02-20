@@ -26,7 +26,6 @@ namespace Day9
                 WriteLine($"Grade: {g}\t Value: {(short)g}");
             }
             #endregion
-            */
             #region pb3
             problem(3);
             Person p1 = new Person { Id = 1, Name = "Maro", Age = 20, Dept = Department.IT };
@@ -34,8 +33,12 @@ namespace Day9
             WriteLine(p1);
             WriteLine(p2);
             #endregion
+            */
             #region pb4
             problem(4);
+            Child c1 = new Child();
+            c1.Salary = (int)15e3;
+            c1.DisplaySalary();
 
             #endregion
             #region pb5
