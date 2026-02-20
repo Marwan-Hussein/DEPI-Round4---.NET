@@ -140,7 +140,13 @@ namespace Day9
 
             #region pb2
             problem(2);
-
+            Stack<int> st = new Stack<int>();
+            int[] arr6 = { 10, 5, 6, 15, 7, -9, 0 };
+            foreach (int x in arr6)
+                st.Push(x);
+            WriteLine(st.Peek());
+            while (!st.isEmpty())
+                WriteLine(st.Pop()); // reversed arr6
             #endregion
             #region pb3
             problem(3);
