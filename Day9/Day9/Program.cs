@@ -90,7 +90,10 @@ namespace Day9
 
             #region pb9
             problem(9);
-
+            Write("Enter a grade (A - F): ");
+            string input = Console.ReadLine();
+            WriteLine(Enum.TryParse<Grades>(input.ToUpper(), out Grades grade) ?
+                $"grade: {grade}" : "Invalid Grade");
             #endregion
 
             #region pb10
@@ -125,7 +128,7 @@ namespace Day9
 
             #endregion
 
-            #region part2
+            /*#region part2
             WriteLine("\n===========    Day 9 - Part 2    ===========");
 
             #region pb1
@@ -159,7 +162,7 @@ namespace Day9
             WriteLine(MaxElement(intArr2));
             #endregion
 
-            #endregion
+            #endregion*/
 
         }
     }
