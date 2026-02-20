@@ -19,4 +19,7 @@
         D,
         F = -1
     }
+
+    enum Gender: byte
+    {Male, Female}
 }
