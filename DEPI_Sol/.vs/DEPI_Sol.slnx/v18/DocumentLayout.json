@@ -3,15 +3,14 @@
   "WorkspaceRootPath": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{29A29C67-E2E8-41D3-8B2A-05DF86C13A63}|..\\Day9\\Day9\\Day9.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day9\\day9\\classes\\stack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29A29C67-E2E8-41D3-8B2A-05DF86C13A63}|..\\Day9\\Day9\\Day9.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day9\\day9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45F4794B-C26F-46A8-9F68-0131049D6DF7}|SharedLib\\SharedLib.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\depi_sol\\sharedlib\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45F4794B-C26F-46A8-9F68-0131049D6DF7}|SharedLib\\SharedLib.csproj|solutionrelative:sharedlib\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45F4794B-C26F-46A8-9F68-0131049D6DF7}|SharedLib\\SharedLib.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\depi_sol\\sharedlib\\sharedlib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{45F4794B-C26F-46A8-9F68-0131049D6DF7}|SharedLib\\SharedLib.csproj|solutionrelative:sharedlib\\sharedlib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29A29C67-E2E8-41D3-8B2A-05DF86C13A63}|..\\Day9\\Day9\\Day9.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day9\\day9\\classes\\complexnumber.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -33,17 +32,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Program.cs",
               "RelativeDocumentMoniker": "..\\Day9\\Day9\\Program.cs",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Program.cs*",
-              "RelativeToolTip": "..\\Day9\\Day9\\Program.cs*",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAYwHoAAAAjAAAAAAAAAA==",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Program.cs",
+              "RelativeToolTip": "..\\Day9\\Day9\\Program.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAowKAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T15:03:47.941Z",
               "IsPinned": true,
@@ -51,7 +50,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Stack.cs",
+              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Stack.cs",
+              "RelativeDocumentMoniker": "..\\Day9\\Day9\\Classes\\Stack.cs",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Stack.cs",
+              "RelativeToolTip": "..\\Day9\\Day9\\Classes\\Stack.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T11:09:04.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Class1.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\SharedLib\\Class1.cs",
               "RelativeDocumentMoniker": "SharedLib\\Class1.cs",
@@ -60,19 +72,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-20T04:27:33.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SharedLib",
-              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\SharedLib\\SharedLib.csproj",
-              "RelativeDocumentMoniker": "SharedLib\\SharedLib.csproj",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\SharedLib\\SharedLib.csproj",
-              "RelativeToolTip": "SharedLib\\SharedLib.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-20T04:27:30.532Z",
               "EditorCaption": ""
             },
             {

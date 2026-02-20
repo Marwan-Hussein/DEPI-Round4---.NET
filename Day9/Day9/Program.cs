@@ -15,6 +15,20 @@ namespace Day9
                 rev[--i] = x;
             return rev;
         }
+        public static void Swap<T>(ref T[] arr, int i, int j)
+        {
+            (arr[i], arr[j]) = (arr[j], arr[i]);
+        }
+
+        // p2-pb4
+        public static T MaxElement<T>(T[] arr) where T: IComparable<T>
+        {
+            T max = arr[0];
+            foreach (T x in arr)
+                if (x.CompareTo(max) > 0)
+                    max = x;
+            return max;
+        }
         static void Main(string[] args)
         {
             #region part1
@@ -130,11 +144,13 @@ namespace Day9
             #endregion
             #region pb3
             problem(3);
-
+            int[] intArr2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Swap(ref intArr2, 5, 8); // 1, 2, 3, 4, 5, 9, 7, 8, 6
+            Print(intArr2);
             #endregion
             #region pb4
             problem(4);
-
+            WriteLine(MaxElement(intArr2));
             #endregion
 
             #endregion
