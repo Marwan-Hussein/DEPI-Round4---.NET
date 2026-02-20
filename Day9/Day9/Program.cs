@@ -39,14 +39,21 @@ namespace Day9
             c1.Salary = (int)15e3;
             c1.DisplaySalary();
 
-            */
             #endregion
             #region pb5
             problem(5);
             WriteLine(Utility.RecPermeter(10, 20));
             #endregion
+            */
             #region pb6
             problem(6);
+            ComplexNumber comp1 = new ComplexNumber(4, 2);
+            ComplexNumber comp2 = new ComplexNumber(1, 5);
+
+            WriteLine($"({comp1}) + ({comp2}) = {comp1 + comp2}"); // 5 + 7i
+            WriteLine($"({comp1}) - ({comp2}) = {comp1 - comp2}"); // 3 - 3i
+            WriteLine($"({comp1}) * ({comp2}) = {comp1 * comp2}"); // -2 + 24i
+
 
             #endregion
             #region pb7
