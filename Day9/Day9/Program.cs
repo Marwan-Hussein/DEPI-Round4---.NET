@@ -8,6 +8,13 @@ namespace Day9
 {
     internal class Program
     {
+        public static T[] Reverse<T>(T[] arr){
+            int i = arr.Length;
+            T[] rev = new T[arr.Length];
+            foreach (T x in arr)
+                rev[--i] = x;
+            return rev;
+        }
         static void Main(string[] args)
         {
             #region part1
@@ -60,12 +67,12 @@ namespace Day9
             WriteLine(sizeof(Gender)); // 1 byte
             WriteLine(sizeof(int)); // 4 (the default)
             #endregion
-            */
             #region pb8
             problem(8);
             WriteLine(Utility.Fehrenheit(10.5)); // 50.9
             WriteLine(Utility.Celsius(73.45)); // 23.03
             #endregion
+            */
 
             #region pb9
             problem(9);
@@ -109,6 +116,11 @@ namespace Day9
 
             #region pb1
             problem(1);
+            int[] intArr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Print(Reverse(intArr));
+
+            string[] strArr = { "Maro", "dola", "john", "doe" };
+            Print(Reverse(strArr));
 
             #endregion
 
