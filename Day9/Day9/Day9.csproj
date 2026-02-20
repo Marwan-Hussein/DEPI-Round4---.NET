@@ -9,8 +9,4 @@
     <ProjectReference Include="..\..\DEPI_Sol\SharedLib\SharedLib.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
-
 </Project>

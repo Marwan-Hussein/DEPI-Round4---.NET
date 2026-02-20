@@ -2,7 +2,8 @@
 using static SharedLib.General;
 using Day9.Enums;
 using System;
-//using Day9.Classes;
+using Day9.Classes;
+using Day9.Classes;
 namespace Day9
 {
     internal class Program
@@ -28,7 +29,10 @@ namespace Day9
             */
             #region pb3
             problem(3);
-
+            Person p1 = new Person { Id = 1, Name = "Maro", Age = 20, Dept = Department.IT };
+            Person p2 = new Person { Id = 2, Name = "john doe", Age = 25, Dept = Department.HR };
+            WriteLine(p1);
+            WriteLine(p2);
             #endregion
             #region pb4
             problem(4);
