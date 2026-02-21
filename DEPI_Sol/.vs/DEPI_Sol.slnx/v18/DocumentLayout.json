@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{29A29C67-E2E8-41D3-8B2A-05DF86C13A63}|..\\Day9\\Day9\\Day9.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day9\\day9\\classes\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29A29C67-E2E8-41D3-8B2A-05DF86C13A63}|..\\Day9\\Day9\\Day9.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day9\\day9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -32,17 +35,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Program.cs",
               "RelativeDocumentMoniker": "..\\Day9\\Day9\\Program.cs",
               "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Program.cs",
               "RelativeToolTip": "..\\Day9\\Day9\\Program.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAkwGUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAQwGEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T15:03:47.941Z",
               "IsPinned": true,
@@ -50,67 +53,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\SharedLib\\Class1.cs",
-              "RelativeDocumentMoniker": "SharedLib\\Class1.cs",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\SharedLib\\Class1.cs",
-              "RelativeToolTip": "SharedLib\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Employee.cs",
+              "RelativeDocumentMoniker": "..\\Day9\\Day9\\Classes\\Employee.cs",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Employee.cs",
+              "RelativeToolTip": "..\\Day9\\Day9\\Classes\\Employee.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAcwGkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T04:27:33.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Enums\\Enums.cs",
-              "RelativeDocumentMoniker": "..\\Day9\\Day9\\Enums\\Enums.cs",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Enums\\Enums.cs",
-              "RelativeToolTip": "..\\Day9\\Day9\\Enums\\Enums.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T23:50:15.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Utility.cs",
-              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Utility.cs",
-              "RelativeDocumentMoniker": "..\\Day9\\Day9\\Classes\\Utility.cs",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Utility.cs",
-              "RelativeToolTip": "..\\Day9\\Day9\\Classes\\Utility.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T01:33:06.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Stack.cs",
-              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Stack.cs",
-              "RelativeDocumentMoniker": "..\\Day9\\Day9\\Classes\\Stack.cs",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Stack.cs",
-              "RelativeToolTip": "..\\Day9\\Day9\\Classes\\Stack.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAADwvyMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T11:09:04.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ComplexNumber.cs",
-              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\ComplexNumber.cs",
-              "RelativeDocumentMoniker": "..\\Day9\\Day9\\Classes\\ComplexNumber.cs",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\ComplexNumber.cs",
-              "RelativeToolTip": "..\\Day9\\Day9\\Classes\\ComplexNumber.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwDAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T03:36:51.936Z",
+              "WhenOpened": "2026-02-21T15:41:40.362Z",
               "EditorCaption": ""
             },
             {
@@ -119,7 +70,67 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\SharedLib\\Class1.cs",
+              "RelativeDocumentMoniker": "SharedLib\\Class1.cs",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\SharedLib\\Class1.cs",
+              "RelativeToolTip": "SharedLib\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T04:27:33.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Enums\\Enums.cs",
+              "RelativeDocumentMoniker": "..\\Day9\\Day9\\Enums\\Enums.cs",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Enums\\Enums.cs",
+              "RelativeToolTip": "..\\Day9\\Day9\\Enums\\Enums.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T23:50:15.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Utility.cs",
+              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Utility.cs",
+              "RelativeDocumentMoniker": "..\\Day9\\Day9\\Classes\\Utility.cs",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Utility.cs",
+              "RelativeToolTip": "..\\Day9\\Day9\\Classes\\Utility.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T01:33:06.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Stack.cs",
+              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Stack.cs",
+              "RelativeDocumentMoniker": "..\\Day9\\Day9\\Classes\\Stack.cs",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Stack.cs",
+              "RelativeToolTip": "..\\Day9\\Day9\\Classes\\Stack.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvyMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T11:09:04.726Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "ComplexNumber.cs",
+              "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\ComplexNumber.cs",
+              "RelativeDocumentMoniker": "..\\Day9\\Day9\\Classes\\ComplexNumber.cs",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\ComplexNumber.cs",
+              "RelativeToolTip": "..\\Day9\\Day9\\Classes\\ComplexNumber.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwDAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T03:36:51.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Person.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Person.cs",
               "RelativeDocumentMoniker": "..\\Day9\\Day9\\Classes\\Person.cs",
