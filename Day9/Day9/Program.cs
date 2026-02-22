@@ -98,6 +98,15 @@ namespace Day9
             */
             #region pb10
             problem(10);
+            Employee[] employees = {
+                new Employee(1, "Maro", (int)2e4),
+                new Employee(2, "Dola", (int)2.5e4),
+                new Employee(3, "Ahmed", (int)1.5e4),
+                new Employee(4, "Ali", (int)2.8e4),
+                new Employee(5, "Shawky", (int)9e3)
+            };
+            //Print(employees);
+            WriteLine(Utility.SearchArray(employees, new Employee(2, "Dola", 25000))); // 1
             #endregion
 
             #region pb11

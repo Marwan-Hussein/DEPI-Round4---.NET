@@ -94,6 +94,7 @@ namespace Day9.Classes
         {
             if(obj == null || GetType() != obj.GetType()) 
                 return false;
+
             Employee other = (Employee)obj;
             return Id == other.Id &&
                 Name == other.Name &&
