@@ -4,6 +4,7 @@ using Day9.Enums;
 using System;
 using Day9.Classes;
 using Day9.Classes;
+using System.Drawing;
 namespace Day9
 {
     internal class Program
@@ -19,6 +20,30 @@ namespace Day9
         {
             (arr[i], arr[j]) = (arr[j], arr[i]);
         }
+
+        // p1-pb13
+        public static void Swap(ref RectangleStruct rec1, ref RectangleStruct rec2)
+        {
+            RectangleStruct tmp = rec1;
+            rec1 = rec2;
+            rec2 = tmp;
+        }
+
+        // p1-pb13
+        public struct RectangleStruct
+        {
+            public int Width {  get; set; }
+            public int Height { get; set; }
+            public RectangleStruct(int w, int h) 
+            {  Width = w; Height = h; }
+
+            public override string ToString()
+            {
+                return $"W: {Width}\t H: {Height}";
+            }
+        }
+
+        // 
 
         // p2-pb4
         public static T MaxElement<T>(T[] arr) where T: IComparable<T>
@@ -114,18 +139,27 @@ namespace Day9
 
             #endregion
 
-            */
             #region pb12
             problem(12);
             int[] arr12 = { 1, 2, 5, 2, 5, 3, 2, 4 };
             Utility.Replace(arr12, 2, 5);
             Print(arr12); // 1 5 5 5 5 3 5 4
+
+            string[] arr13 = { "hello", "world", "I'm", "Maro" };
+            Utility.Replace(arr13, "world", "hello");
+            Print(arr13);
             #endregion
 
             #region pb13
             problem(13);
+            RectangleStruct rec1 = new RectangleStruct(4,5),
+                rec2 = new RectangleStruct(8,10);
+            WriteLine($"rec1: {rec1}\nrec2: {rec2}");
+            Swap(ref rec1,ref rec2);
+            WriteLine($"rec1: {rec1}\nrec2: {rec2}");
 
             #endregion
+            */
 
             #region pb14
             problem(14);
