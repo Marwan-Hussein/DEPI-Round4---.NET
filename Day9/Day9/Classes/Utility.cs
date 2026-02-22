@@ -16,5 +16,12 @@ namespace Day9.Classes
                     return i;
             return -1;
         }
+
+        public static void Replace<T>(T[] arr, T oldItem, T newItem)
+        {
+            for(int i=0; i< arr.Length; i++)
+                if(arr[i].Equals(oldItem))
+                    arr[i] = newItem;
+        }
     }
 }

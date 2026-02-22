@@ -95,7 +95,6 @@ namespace Day9
                 $"grade: {grade}" : "Invalid Grade");
             #endregion
 
-            */
             #region pb10
             problem(10);
             Employee[] employees = {
@@ -115,9 +114,12 @@ namespace Day9
 
             #endregion
 
+            */
             #region pb12
             problem(12);
-
+            int[] arr12 = { 1, 2, 5, 2, 5, 3, 2, 4 };
+            Utility.Replace(arr12, 2, 5);
+            Print(arr12); // 1 5 5 5 5 3 5 4
             #endregion
 
             #region pb13
