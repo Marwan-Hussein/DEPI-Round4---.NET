@@ -43,7 +43,18 @@ namespace Day9
             }
         }
 
-        // 
+        // p1-pb15
+        public struct CircleStruct
+        {
+            public int Radius { get; set; }
+            public string Color { get; set; }
+            public CircleStruct(int r, string c)
+            {  Radius = r; Color = c; }
+            public override string ToString()
+            {
+                return $"r: {Radius}\t Color: {Color}";
+            }
+        }
 
         // p2-pb4
         public static T MaxElement<T>(T[] arr) where T: IComparable<T>
@@ -168,7 +179,10 @@ namespace Day9
 
             #region pb15
             problem(15);
-
+            CircleStruct c1 = new CircleStruct(5, "red");
+            CircleStruct c2 = new CircleStruct(5, "red");
+            WriteLine(c1.Equals(c2));
+            //WriteLine(c1 == c2); // can't be applied
             #endregion
 
             #endregion
