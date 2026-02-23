@@ -141,7 +141,8 @@ namespace Day9
                 new Employee(5, "Shawky", (int)9e3)
             };
             //Print(employees);
-            WriteLine(Utility.SearchArray(employees, new Employee(2, "Dola", 25000))); // 1
+            Employee[] resArr = Utility.SearchArray(employees, new Employee(2, "Dola", (int)2.5e4));
+            Print(resArr); // 
             #endregion
 
             #region pb11

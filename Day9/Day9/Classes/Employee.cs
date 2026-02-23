@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 namespace Day9.Classes
 {
     internal class Employee : ICloneable, IComparable
@@ -69,7 +70,10 @@ namespace Day9.Classes
 
         public override string ToString()
         {
-            return $"Emp Id is {Id?? null}, EmpName is {Name??null}, EmpSalary is {Salary??null}, Department is {Department?? null}";
+            return $"Id: {Id?? null}\t" +
+                $" Name: {Name??null}\t" +
+                $" Salary: {Salary??null}\t" +
+                $" Department: {Department?? null}";
         }
 
 
@@ -110,7 +114,24 @@ namespace Day9.Classes
             //    Name == other.Name &&
             //    Salary == other.Salary &&
             //    Department.Equals (other.Department);
-            return Department != null && Department.Equals(other.Department);
+            if (Id == null && Name == null && Salary == null && Department == null)
+                return false;
+
+            //if(Id != null && other.Id != null && Id != other.Id) return false;
+            //return Id.Equals(other.Id)
+            //    && Name.Equals(other.Name)
+            //    && Salary.Equals(other.Salary)
+            //    &&(Department == null || Department.Equals(other.Department));
+            if (Id != null && other.Id != null && Id != other.Id) 
+                return false;
+            if (Name != null && other.Name != null && Name != other.Name) 
+                return false;
+            if (Salary != null && other.Salary != null && Salary != other.Salary) 
+                return false;
+            if (Department != null && other.Department != null && !Department.Equals(other.Department)) 
+                return false;
+            return true;
+
         }
 
         

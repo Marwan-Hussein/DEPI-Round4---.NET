@@ -16,7 +16,7 @@ namespace SharedLib
         public static void Print<T>(T[] arr)
         {
             foreach (T t in arr)
-                WriteLine($"{t} ");
+                WriteLine(t);
             WriteLine();
         }
 
