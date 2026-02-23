@@ -3,10 +3,12 @@ namespace Day9.Classes
 {
     internal class Employee : ICloneable, IComparable
     {
-        public int Id { get; set; }
+        #region properties
+        public int? Id { get; set; }
         public string Name { get; set; }
-        public double Salary { get; set; }
-
+        public double? Salary { get; set; }
+        public DepartmentEmp? Department { get; set; }
+        #endregion
 
         //Generic type >> object
         //1- generate new obj with same data 
@@ -23,6 +25,7 @@ namespace Day9.Classes
             };
         }
 
+        #region ctors
         //Copy Ctor :
         // special ctor :> take one parameter of same type class 
         public Employee(Employee Copy)
@@ -55,11 +58,18 @@ namespace Day9.Classes
             this.Name = Name;
             this.Salary = Salary;
         }
+        public Employee(string name, DepartmentEmp dept)
+        {
+            Name = name;
+            Department = dept;
+        }
 
+        public Employee(DepartmentEmp dept) { Department = dept; }
+        #endregion
 
         public override string ToString()
         {
-            return $"Emp Id is {Id}, EmpName is {Name}, EmpSalary is {Salary}";
+            return $"Emp Id is {Id?? null}, EmpName is {Name??null}, EmpSalary is {Salary??null}, Department is {Department?? null}";
         }
 
 
@@ -96,9 +106,11 @@ namespace Day9.Classes
                 return false;
 
             Employee other = (Employee)obj;
-            return Id == other.Id &&
-                Name == other.Name &&
-                Salary == other.Salary;
+            //return Id == other.Id &&
+            //    Name == other.Name &&
+            //    Salary == other.Salary &&
+            //    Department.Equals (other.Department);
+            return Department != null && Department.Equals(other.Department);
         }
 
         

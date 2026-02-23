@@ -9,12 +9,13 @@ namespace Day9.Classes
         public static double Celsius(double F) => Round((F - 32) * (5 / 9d) ,2);
         public static T Max<T>(T x, T y) where T : IComparable<T>
             => x.CompareTo(y) > 0 ? x : y;
-        public static int SearchArray<T>(T[] arr, T item)
+        public static T[] SearchArray<T>(T[] arr, T item)
         {
-            for (int i = 0; i < arr.Length; i++)
+            T[] res = new T[arr.Length];
+            for (int i = 0,j=0; i < arr.Length; i++)
                 if (arr[i].Equals(item))
-                    return i;
-            return -1;
+                    res[j++] = arr[i];
+            return res??null;
         }
 
         public static void Replace<T>(T[] arr, T oldItem, T newItem)

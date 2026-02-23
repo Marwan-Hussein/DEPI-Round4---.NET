@@ -69,7 +69,7 @@ namespace Day9
         {
             #region part1
             WriteLine("\n===========    Day 9 - Part 1    ===========");
-            /*#region pb1
+            #region pb1
             problem(1);
             foreach(WeekDays day in Enum.GetValues(typeof(WeekDays)))
             {
@@ -170,19 +170,29 @@ namespace Day9
             WriteLine($"rec1: {rec1}\nrec2: {rec2}");
 
             #endregion
-            */
+            
 
             #region pb14
             problem(14);
+            Employee[] emps =
+            {
+                new Employee("maro", new DepartmentEmp(DepartmentType.Backend)),
+                new Employee("Ali", new DepartmentEmp(DepartmentType.Backend)),
+                new Employee("Ahmed", new DepartmentEmp(DepartmentType.Frontend)),
+                new Employee("mona", new DepartmentEmp(DepartmentType.Backend))
 
+            };
+
+            Employee[] result = Utility.SearchArray(emps, new Employee(new DepartmentEmp(DepartmentType.Backend)));
+            Print(result);
             #endregion
-            /*
+            
 
             #region pb15
             problem(15);
-            CircleStruct c1 = new CircleStruct(5, "red");
-            CircleStruct c2 = new CircleStruct(5, "red");
-            WriteLine(c1.Equals(c2));
+            CircleStruct c15 = new CircleStruct(5, "red");
+            CircleStruct c16 = new CircleStruct(5, "red");
+            WriteLine(c15.Equals(c16));
             //WriteLine(c1 == c2); // can't be applied
             #endregion
 
@@ -221,7 +231,7 @@ namespace Day9
             WriteLine(MaxElement(intArr2));
             #endregion
 
-            #endregion*/
+            #endregion
 
         }
     }
