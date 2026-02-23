@@ -19,5 +19,17 @@ namespace SharedLib
                 WriteLine($"{t} ");
             WriteLine();
         }
+
+        public static void InitFile(int pbInit, int pbFinal, int part=0)
+        {
+            string prt = part == 0 ? "" : $"Part {part} - ";
+            for(int i = pbInit; i <= pbFinal; i++)
+            {
+                WriteLine($"#region {prt}pb{i}");
+                WriteLine($"problem({i});");
+                WriteLine();
+                WriteLine("#endregion\n");
+            }
+        }
     }
 }
