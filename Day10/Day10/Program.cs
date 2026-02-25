@@ -9,6 +9,7 @@ namespace Day10
     {
         static void Main(string[] args)
         {
+            /*
             #region pb1
             problem(1);
             Employee[] emps =
@@ -21,20 +22,19 @@ namespace Day10
             Sort(emps, del);
             Print(emps); 
             #endregion
-            /*
             #region pb2
             problem(2);
             int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            Func<int, int, bool> desc = (x, y) => x > y;
-            Statics<int>.SortingTwo(arr, desc);
+            Func<int, int, bool> descInt = (x, y) => x > y;
+            Statics<int>.SortingTwo(arr, descInt);
             Print(arr);
             #endregion
 
             #region pb3
             problem(3);
             string[] arr3 = { "maro", "hi", "I'm" };
-            Func<string, string, bool> asc = (x, y) => x.Length < y.Length;
-            Statics<string>.SortingTwo(arr3, asc);
+            Func<string, string, bool> ascStr = (x, y) => x.Length < y.Length;
+            Statics<string>.SortingTwo(arr3, ascStr);
             Print(arr3); // hi i'm maro
             #endregion
 
@@ -49,7 +49,6 @@ namespace Day10
             Manager.Sort(mngers);
             Print(mngers);
             #endregion
-            */
 
             #region pb5
             problem(5);
@@ -57,9 +56,14 @@ namespace Day10
             SortingTwo(emps, lessLen);
             Print(emps);
             #endregion
+            */
 
             #region pb6
             problem(6);
+            Func<int, int, bool> ascInt = (x, y) => x < y;
+            int[] arr6 = { 9, 8, 7, 6, 5, 4, 3, 2, 1};
+            Statics<int>.SortingTwo(arr6, ascInt);
+            Print(arr6);
 
             #endregion
 
