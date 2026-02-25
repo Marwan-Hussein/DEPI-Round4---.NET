@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using static System.Console;
 namespace SharedLib
 {
@@ -15,6 +16,13 @@ namespace SharedLib
         }
 
         public static void Print<T>(T[] arr)
+        {
+            foreach (T t in arr)
+                WriteLine(t);
+            WriteLine();
+        }
+
+        public static void Print<T>(List<T> arr)
         {
             foreach (T t in arr)
                 WriteLine(t);

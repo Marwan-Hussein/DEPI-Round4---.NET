@@ -15,6 +15,7 @@ namespace Day10
                 action(s);
         }
 
+        // pb16
         public static List<T> FilterList<T>(List<T> list, Predicate<T> baseAction)
         {
             List<T> result = new List<T>();
@@ -23,6 +24,11 @@ namespace Day10
                     result.Add(i);
             return result;
         }
+
+        // pb17
+        public static bool StartWith(string s, char c) => char.ToLower(s[0]) == char.ToLower(c);
+        public static bool EndWith(string s, char c) => char.ToLower(s[s.Length -1]) == char.ToLower(c);
+
         static void Main(string[] args)
         {
             // delegates
@@ -193,18 +199,29 @@ namespace Day10
             PrintStrings(strings,action);
             #endregion
 
-            */
             #region pb16
             problem(16);
             List<int> list = new List<int> { 1,2,3,4,5,6,7,8,9};
             Predicate<int> BaseAction = (x) => x % 2 == 0;
             List<int> result = FilterList(list,BaseAction);
-            foreach (int i in result)
-                Write($"{i} ");
+            Print(result);
             #endregion
+            */
 
             #region pb17
             problem(17);
+            List<string> strList = new List<string> {"alloc", "malloc","ant", "anydisk" };
+            
+            Predicate<string> act = (str, ch) => StartWith(str, ch);
+            List<string> startWith = FilterList(strList, act);
+            Print(startWith);
+
+            act = (str, ch) => EndWith(str, ch);
+            List<string> endWith = FilterList(strList, act);
+            Print(endWith);
+ 
+            //List<string> startWith = FilterList(strList, act);
+            //Print(startWith);
 
             #endregion
 
