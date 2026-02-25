@@ -26,13 +26,16 @@ namespace Day10
             problem(2);
             int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             Func<int, int, bool> desc = (x, y) => x > y;
-            Statics<int>.Sort(arr, desc);
+            Statics<int>.SortingTwo(arr, desc);
             Print(arr);
             #endregion
 
             #region pb3
             problem(3);
-
+            string[] arr3 = { "maro", "hi", "I'm" };
+            Func<string, string, bool> asc = (x, y) => x.Length < y.Length;
+            Statics<string>.SortingTwo(arr3, asc);
+            Print(arr3); // hi i'm maro
             #endregion
 
             #region pb4

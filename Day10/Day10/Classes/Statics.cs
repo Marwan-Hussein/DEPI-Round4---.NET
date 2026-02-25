@@ -25,7 +25,7 @@ namespace Day10.Classes
         
         }
 
-        public static void Sort(T[] array, Func<T, T, bool> del)
+        public static void SortingTwo(T[] array, Func<T, T, bool> del)
         {
             for (int i = 0; i < array.Length; i++)
                 for (int j = 0; j < array.Length; j++)
