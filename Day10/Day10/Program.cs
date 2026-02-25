@@ -9,6 +9,11 @@ namespace Day10
 {
     internal class Program
     {
+        public static void PrintStrings(List<string> strings, Action<string> action)
+        {
+            foreach (string s in strings)
+                action(s);
+        }
         static void Main(string[] args)
         {
             // delegates
@@ -164,7 +169,6 @@ namespace Day10
             int[] ints = Statics<double>.TransformList(dbles, n => (int)n);
             Print(ints);
             #endregion
-            */
 
             #region pb14
             problem(14);
@@ -172,10 +176,13 @@ namespace Day10
             int[] res14 = Statics<int>.PerformFnc(arr14, (a) => a * a);
             Print(res14);
             #endregion
+            */
 
             #region pb15
             problem(15);
-
+            List<string> strings = new List<string>{"hi", "Maro", "badrasheen","is", "a","dawla"};
+            Action<string> action = (x) => Write($"{x} ");
+            PrintStrings(strings,action);
             #endregion
 
             #region pb16
