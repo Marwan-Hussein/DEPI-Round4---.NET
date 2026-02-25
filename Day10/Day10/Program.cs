@@ -1,5 +1,8 @@
-﻿using static System.Console;
+﻿using Day10.Classes;
+using System;
+using static Day10.Classes.Statics<Day10.Classes.Employee>;
 using static SharedLib.General;
+using static System.Console;
 namespace Day10
 {
     internal class Program
@@ -8,7 +11,15 @@ namespace Day10
         {
             #region pb1
             problem(1);
-
+            Employee[] emps =
+            {
+                new Employee("Maro", (int)4.5e4),
+                new Employee("ahmed", 12500),
+                new Employee("john", (int)2.5e3)
+            };
+            CompareDelegate del = new CompareDelegate(Smaller);
+            Sort(emps, del);
+            Print(emps); 
             #endregion
 
             #region pb2
