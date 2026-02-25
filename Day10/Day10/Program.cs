@@ -56,7 +56,6 @@ namespace Day10
             SortingTwo(emps, lessLen);
             Print(emps);
             #endregion
-            */
 
             #region pb6
             problem(6);
@@ -66,10 +65,15 @@ namespace Day10
             Print(arr6);
 
             #endregion
+            */
 
             #region pb7
             problem(7);
-
+            // it's already as this in Statics<T>
+            int[] arr7 = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Statics<int>.CompareDelegate DescArr7 = new Statics<int>.CompareDelegate(Statics<int>.Greater);
+            Statics<int>.Sort(arr7, DescArr7);
+            Print(arr7);
             #endregion
 
             #region pb8

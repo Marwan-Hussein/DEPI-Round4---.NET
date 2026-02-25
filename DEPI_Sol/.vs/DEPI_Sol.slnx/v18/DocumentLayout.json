@@ -6,13 +6,13 @@
       "AbsoluteMoniker": "D:0:0:{AFD10C37-87C7-4ABB-803D-A18E6BA4064B}|..\\Day10\\Day10\\Day10.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day10\\day10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AFD10C37-87C7-4ABB-803D-A18E6BA4064B}|..\\Day10\\Day10\\Day10.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day10\\day10\\classes\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFD10C37-87C7-4ABB-803D-A18E6BA4064B}|..\\Day10\\Day10\\Day10.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day10\\day10\\classes\\statics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFD10C37-87C7-4ABB-803D-A18E6BA4064B}|..\\Day10\\Day10\\Day10.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day10\\day10\\classes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFD10C37-87C7-4ABB-803D-A18E6BA4064B}|..\\Day10\\Day10\\Day10.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day10\\day10\\classes\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29A29C67-E2E8-41D3-8B2A-05DF86C13A63}|..\\Day9\\Day9\\Day09.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day9\\day9\\classes\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -45,7 +45,7 @@
               "RelativeDocumentMoniker": "..\\Day10\\Day10\\Program.cs",
               "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Program.cs*",
               "RelativeToolTip": "..\\Day10\\Day10\\Program.cs*",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAwEEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T15:38:45.487Z",
               "IsPinned": true,
@@ -53,13 +53,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Statics.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Classes\\Statics.cs",
               "RelativeDocumentMoniker": "..\\Day10\\Day10\\Classes\\Statics.cs",
               "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Classes\\Statics.cs",
               "RelativeToolTip": "..\\Day10\\Day10\\Classes\\Statics.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBsAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA3wAoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T15:42:40.711Z",
               "IsPinned": true,
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Manager.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Classes\\Manager.cs",
               "RelativeDocumentMoniker": "..\\Day10\\Day10\\Classes\\Manager.cs",
@@ -80,13 +80,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Employee.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Classes\\Employee.cs",
               "RelativeDocumentMoniker": "..\\Day10\\Day10\\Classes\\Employee.cs",
               "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Classes\\Employee.cs",
               "RelativeToolTip": "..\\Day10\\Day10\\Classes\\Employee.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAiwHsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAcwHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-25T01:13:27.884Z",
               "EditorCaption": ""
