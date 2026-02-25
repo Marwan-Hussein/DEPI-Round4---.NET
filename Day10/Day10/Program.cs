@@ -23,6 +23,7 @@ namespace Day10
                     return lessLen(e1, e2);
                 return e1.Salary < e2.Salary;
             };
+
             /*
             #region pb1
             problem(1);
@@ -105,7 +106,6 @@ namespace Day10
             WriteLine($"default of string: {Statics<string>.GetDefault()}");
 
             #endregion
-            */
 
             #region pb10
             problem(10);
@@ -123,10 +123,23 @@ namespace Day10
             WriteLine("Sorted:");
             Print(sortedEmps);
             #endregion
+            */
 
             #region pb11
             problem(11);
+            string[] StrList = {"Marwan", "hUssein", "MoHamed"};
+            
+            Statics<string>.TransformStrList( StrList, new Statics<string>.StringsDelegate(Upper));
+            WriteLine("Upper:");
+            Print(StrList);
 
+            Statics<string>.TransformStrList( StrList, new Statics<string>.StringsDelegate(Lower));
+            WriteLine("Lower:");
+            Print(StrList);
+
+            Statics<string>.TransformStrList( StrList, new Statics<string>.StringsDelegate(Reverse));
+            WriteLine("Reverse:");
+            Print(StrList);
             #endregion
 
             #region pb12

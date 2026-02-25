@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFD10C37-87C7-4ABB-803D-A18E6BA4064B}|..\\Day10\\Day10\\Day10.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day10\\day10\\classes\\statics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFD10C37-87C7-4ABB-803D-A18E6BA4064B}|..\\Day10\\Day10\\Day10.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day10\\day10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFD10C37-87C7-4ABB-803D-A18E6BA4064B}|..\\Day10\\Day10\\Day10.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day10\\day10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFD10C37-87C7-4ABB-803D-A18E6BA4064B}|..\\Day10\\Day10\\Day10.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day10\\day10\\classes\\statics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29A29C67-E2E8-41D3-8B2A-05DF86C13A63}|..\\Day9\\Day9\\Day09.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day9\\day9\\classes\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -35,17 +35,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Program.cs",
               "RelativeDocumentMoniker": "..\\Day10\\Day10\\Program.cs",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Program.cs",
-              "RelativeToolTip": "..\\Day10\\Day10\\Program.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAAwHkAAAAeAAAAAAAAAA==",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Program.cs*",
+              "RelativeToolTip": "..\\Day10\\Day10\\Program.cs*",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAAAIsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T15:38:45.487Z",
               "IsPinned": true,
@@ -53,13 +53,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Statics.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Classes\\Statics.cs",
               "RelativeDocumentMoniker": "..\\Day10\\Day10\\Classes\\Statics.cs",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Classes\\Statics.cs*",
-              "RelativeToolTip": "..\\Day10\\Day10\\Classes\\Statics.cs*",
-              "ViewState": "AgIAABkAAAAAAAAAAAAqwB0AAAAJAAAAAAAAAA==",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Classes\\Statics.cs",
+              "RelativeToolTip": "..\\Day10\\Day10\\Classes\\Statics.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA8wBcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T15:42:40.711Z",
               "IsPinned": true,

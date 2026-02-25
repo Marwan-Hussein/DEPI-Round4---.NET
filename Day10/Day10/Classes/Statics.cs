@@ -8,10 +8,29 @@ namespace Day10.Classes
 {
     internal static class Statics<T> where T: IComparable
     {
-        #region for delegates
+        #region for Comparisson delegates
         public delegate bool CompareDelegate(T a, T b);
         public static bool Greater(T a, T b) => a.CompareTo(b) > 0;
         public static bool Smaller(T a, T b) => a.CompareTo(b) < 0;
+        #endregion
+
+        #region for strings delegates
+        public delegate string StringsDelegate(string s);
+        public static string Upper(string str) => str.ToUpper();
+        public static string Lower(string str) => str.ToLower();
+        public static string Reverse(string str) 
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = str.Length-1; i >= 0; i--)
+                sb.Append(str[i]);
+            return sb.ToString();        
+        }
+
+        public static void TransformStrList(string[] list, StringsDelegate strDelegate)
+        {
+            for(int i=0; i < list.Length; i++)
+                list[i] = strDelegate(list[i]);
+        }
         #endregion
         public static void Swap(ref T a, ref T b)
         {
