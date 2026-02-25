@@ -97,7 +97,6 @@ namespace Day10
             SortingTwo(employees2, Customized);
             Print(employees2);
             #endregion
-            */
 
             #region pb9
             problem(9);
@@ -106,10 +105,23 @@ namespace Day10
             WriteLine($"default of string: {Statics<string>.GetDefault()}");
 
             #endregion
+            */
 
             #region pb10
             problem(10);
-
+            Employee[] employees3 =
+            {
+                new Employee(1, "Alice", 5000),
+                new Employee(2, "Bobb", 6000),
+                new Employee(3, "Charlie", 6000),
+                new Employee(4, "Diana", 5500),
+                new Employee(5, "Eve", 6000)
+            };
+            Employee[] sortedEmps = Statics<Employee>.SortRetArr(employees3, Customized);
+            WriteLine("Not Sorted:");
+            Print(employees3);
+            WriteLine("Sorted:");
+            Print(sortedEmps);
             #endregion
 
             #region pb11

@@ -26,6 +26,15 @@ namespace Day10.Classes
                         Swap(ref array[j],ref array[i]);
         
         }
+        public static T[] SortRetArr(T[] arr, Func<T, T, bool> del)
+        {
+            T[] res = (T[])arr.Clone();
+            for (int i = 0; i < res.Length; i++)
+                for (int j = 0; j < res.Length; j++)
+                    if (del(res[i], res[j]))
+                        Swap(ref res[j], ref res[i]);
+            return res;
+        }
         public static void SortingTwo(T[] array, Func<T, T, bool> PrimaryDel)
         {
             for (int i = 0; i < array.Length; i++)
