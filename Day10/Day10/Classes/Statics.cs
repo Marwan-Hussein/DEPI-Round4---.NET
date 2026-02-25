@@ -8,14 +8,16 @@ namespace Day10.Classes
 {
     internal static class Statics<T> where T: IComparable
     {
-    public delegate bool CompareDelegate(T a, T b);
+        #region for delegates
+        public delegate bool CompareDelegate(T a, T b);
         public static bool Greater(T a, T b) => a.CompareTo(b) > 0;
         public static bool Smaller(T a, T b) => a.CompareTo(b) < 0;
-
+        #endregion
         public static void Swap(ref T a, ref T b)
         {
             (a, b) = (b, a);
         }
+        #region sorting
         public static void Sort(T[] array, CompareDelegate del)
         { 
             for(int i=0;i < array.Length;i++)
@@ -31,6 +33,12 @@ namespace Day10.Classes
                     if (PrimaryDel(array[i], array[j]))
                         Swap(ref array[j], ref array[i]);
 
+        }
+        #endregion
+
+        public static T GetDefault()
+        {
+            return default(T);
         }
     }
 }

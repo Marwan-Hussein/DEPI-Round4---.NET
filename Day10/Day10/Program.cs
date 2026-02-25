@@ -1,5 +1,7 @@
 ﻿using Day10.Classes;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using static Day10.Classes.Statics<Day10.Classes.Employee>;
 using static SharedLib.General;
 using static System.Console;
@@ -82,7 +84,6 @@ namespace Day10
             Print(arr7);
             #endregion
 
-            */
             #region pb8
             problem(8);
             Employee[] employees2 = 
@@ -96,9 +97,13 @@ namespace Day10
             SortingTwo(employees2, Customized);
             Print(employees2);
             #endregion
+            */
 
             #region pb9
             problem(9);
+            WriteLine($"default of int: {Statics<int>.GetDefault()}");
+            WriteLine($"default of bool: {Statics<bool>.GetDefault()}");
+            WriteLine($"default of string: {Statics<string>.GetDefault()}");
 
             #endregion
 
