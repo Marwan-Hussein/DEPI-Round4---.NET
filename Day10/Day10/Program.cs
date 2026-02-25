@@ -9,7 +9,7 @@ namespace Day10
     {
         static void Main(string[] args)
         {
-            #region pb1
+            /*#region pb1
             problem(1);
             Employee[] emps =
             {
@@ -21,10 +21,13 @@ namespace Day10
             Sort(emps, del);
             Print(emps); 
             #endregion
-
+            */
             #region pb2
             problem(2);
-
+            int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Func<int, int, bool> desc = (x, y) => x > y;
+            Statics<int>.Sort(arr, desc);
+            Print(arr);
             #endregion
 
             #region pb3

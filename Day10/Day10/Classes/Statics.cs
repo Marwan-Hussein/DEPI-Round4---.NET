@@ -24,5 +24,14 @@ namespace Day10.Classes
                         Swap(ref array[j],ref array[i]);
         
         }
+
+        public static void Sort(T[] array, Func<T, T, bool> del)
+        {
+            for (int i = 0; i < array.Length; i++)
+                for (int j = 0; j < array.Length; j++)
+                    if (del(array[i], array[j]))
+                        Swap(ref array[j], ref array[i]);
+
+        }
     }
 }
