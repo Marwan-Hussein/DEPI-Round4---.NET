@@ -123,7 +123,6 @@ namespace Day10
             WriteLine("Sorted:");
             Print(sortedEmps);
             #endregion
-            */
 
             #region pb11
             problem(11);
@@ -141,9 +140,23 @@ namespace Day10
             WriteLine("Reverse:");
             Print(StrList);
             #endregion
+            */
 
             #region pb12
             problem(12);
+            int a = 12, b = 6;
+            Statics<int>.IntDelegate IntDel = new Statics<int>.IntDelegate(Add);
+            WriteLine($"{a} + {b} = "+Statics<int>.OpInt(a,b, IntDel));
+
+            IntDel = new Statics<int>.IntDelegate(Sub);
+            WriteLine($"{a} - {b} = "+Statics<int>.OpInt(a, b, IntDel));
+
+            IntDel = new Statics<int>.IntDelegate(Mult);
+            WriteLine($"{a} * {b} = "+Statics<int>.OpInt(a, b, IntDel));
+
+            IntDel = new Statics<int>.IntDelegate(Div);
+            WriteLine($"{a} / {b} = "+Statics<int>.OpInt(a, b, IntDel));
+
 
             #endregion
 

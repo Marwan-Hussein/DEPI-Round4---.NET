@@ -14,7 +14,7 @@ namespace Day10.Classes
         public static bool Smaller(T a, T b) => a.CompareTo(b) < 0;
         #endregion
 
-        #region for strings delegates
+        #region for strings delegates pb11
         public delegate string StringsDelegate(string s);
         public static string Upper(string str) => str.ToUpper();
         public static string Lower(string str) => str.ToLower();
@@ -31,6 +31,15 @@ namespace Day10.Classes
             for(int i=0; i < list.Length; i++)
                 list[i] = strDelegate(list[i]);
         }
+        #endregion
+
+        #region int to int pb12
+        public delegate int IntDelegate(int a, int b);
+        public static int Add(int a,int b) => a + b;
+        public static int Sub(int a, int b) => a - b;
+        public static int Mult(int a, int b) => a * b;
+        public static int Div(int a, int b) => a / b;
+        public static int OpInt(int a, int b, IntDelegate del) => del(a,b);
         #endregion
         public static void Swap(ref T a, ref T b)
         {
