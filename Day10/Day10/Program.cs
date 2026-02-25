@@ -9,6 +9,18 @@ namespace Day10
     {
         static void Main(string[] args)
         {
+            // delegates
+            Statics<int>.CompareDelegate DescArr7 = new Statics<int>.CompareDelegate(Statics<int>.Greater);
+            CompareDelegate del = new CompareDelegate(Smaller);
+            Func<int, int, bool> descInt = (x, y) => x > y;
+            Func<string, string, bool> ascStr = (x, y) => x.Length < y.Length;
+            Func<Employee, Employee, bool> lessLen = (emp1, emp2) => emp1.Name.Length < emp2.Name.Length;
+            Func<Employee, Employee, bool> Customized = (e1, e2) =>
+            {
+                if (e1.Salary == e2.Salary)
+                    return lessLen(e1, e2);
+                return e1.Salary < e2.Salary;
+            };
             /*
             #region pb1
             problem(1);
@@ -18,14 +30,12 @@ namespace Day10
                 new Employee("ahmed", 12500),
                 new Employee("john", (int)2.5e3)
             };
-            CompareDelegate del = new CompareDelegate(Smaller);
             Sort(emps, del);
             Print(emps); 
             #endregion
             #region pb2
             problem(2);
             int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            Func<int, int, bool> descInt = (x, y) => x > y;
             Statics<int>.SortingTwo(arr, descInt);
             Print(arr);
             #endregion
@@ -33,7 +43,6 @@ namespace Day10
             #region pb3
             problem(3);
             string[] arr3 = { "maro", "hi", "I'm" };
-            Func<string, string, bool> ascStr = (x, y) => x.Length < y.Length;
             Statics<string>.SortingTwo(arr3, ascStr);
             Print(arr3); // hi i'm maro
             #endregion
@@ -52,7 +61,6 @@ namespace Day10
 
             #region pb5
             problem(5);
-            Func<Employee, Employee, bool> lessLen = (emp1, emp2) => emp1.Name.Length < emp2.Name.Length;
             SortingTwo(emps, lessLen);
             Print(emps);
             #endregion
@@ -65,20 +73,28 @@ namespace Day10
             Print(arr6);
 
             #endregion
-            */
 
             #region pb7
             problem(7);
             // it's already as this in Statics<T>
             int[] arr7 = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            Statics<int>.CompareDelegate DescArr7 = new Statics<int>.CompareDelegate(Statics<int>.Greater);
             Statics<int>.Sort(arr7, DescArr7);
             Print(arr7);
             #endregion
 
+            */
             #region pb8
             problem(8);
-
+            Employee[] employees2 = 
+            { 
+                new Employee(1, "Alice", 5000), 
+                new Employee(2, "Bobb", 6000), 
+                new Employee(3, "Charlie", 6000), 
+                new Employee(4, "Diana", 5500), 
+                new Employee(5, "Eve", 6000) 
+            };
+            SortingTwo(employees2, Customized);
+            Print(employees2);
             #endregion
 
             #region pb9

@@ -24,12 +24,11 @@ namespace Day10.Classes
                         Swap(ref array[j],ref array[i]);
         
         }
-
-        public static void SortingTwo(T[] array, Func<T, T, bool> del)
+        public static void SortingTwo(T[] array, Func<T, T, bool> PrimaryDel)
         {
             for (int i = 0; i < array.Length; i++)
                 for (int j = 0; j < array.Length; j++)
-                    if (del(array[i], array[j]))
+                    if (PrimaryDel(array[i], array[j]))
                         Swap(ref array[j], ref array[i]);
 
         }
