@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using System.Collections;
+using static System.Console;
 namespace SharedLib
 {
     public static class General

@@ -14,6 +14,15 @@ namespace Day10
             foreach (string s in strings)
                 action(s);
         }
+
+        public static List<T> FilterList<T>(List<T> list, Predicate<T> baseAction)
+        {
+            List<T> result = new List<T>();
+            foreach (T i in list)
+                if(baseAction(i))
+                    result.Add(i);
+            return result;
+        }
         static void Main(string[] args)
         {
             // delegates
@@ -176,7 +185,6 @@ namespace Day10
             int[] res14 = Statics<int>.PerformFnc(arr14, (a) => a * a);
             Print(res14);
             #endregion
-            */
 
             #region pb15
             problem(15);
@@ -185,9 +193,14 @@ namespace Day10
             PrintStrings(strings,action);
             #endregion
 
+            */
             #region pb16
             problem(16);
-
+            List<int> list = new List<int> { 1,2,3,4,5,6,7,8,9};
+            Predicate<int> BaseAction = (x) => x % 2 == 0;
+            List<int> result = FilterList(list,BaseAction);
+            foreach (int i in result)
+                Write($"{i} ");
             #endregion
 
             #region pb17

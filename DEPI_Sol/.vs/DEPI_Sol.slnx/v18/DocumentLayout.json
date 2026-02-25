@@ -6,6 +6,10 @@
       "AbsoluteMoniker": "D:0:0:{AFD10C37-87C7-4ABB-803D-A18E6BA4064B}|..\\Day10\\Day10\\Day10.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day10\\day10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{45F4794B-C26F-46A8-9F68-0131049D6DF7}|SharedLib\\SharedLib.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\depi_sol\\sharedlib\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F4794B-C26F-46A8-9F68-0131049D6DF7}|SharedLib\\SharedLib.csproj|solutionrelative:sharedlib\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFD10C37-87C7-4ABB-803D-A18E6BA4064B}|..\\Day10\\Day10\\Day10.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day10\\day10\\classes\\statics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,10 +23,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{29A29C67-E2E8-41D3-8B2A-05DF86C13A63}|..\\Day9\\Day9\\Day09.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day9\\day9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45F4794B-C26F-46A8-9F68-0131049D6DF7}|SharedLib\\SharedLib.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\depi_sol\\sharedlib\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F4794B-C26F-46A8-9F68-0131049D6DF7}|SharedLib\\SharedLib.csproj|solutionrelative:sharedlib\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FC55BE0-27C9-4846-B698-DC32D7DF8136}|..\\Day8\\Day8\\Day08.csproj|b:\\interns\\depi 2025-2026 fullstack .net\\depi-round4---.net\\day8\\day8\\day08.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -45,7 +45,7 @@
               "RelativeDocumentMoniker": "..\\Day10\\Day10\\Program.cs",
               "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Program.cs*",
               "RelativeToolTip": "..\\Day10\\Day10\\Program.cs*",
-              "ViewState": "AgIAALEAAAAAAAAAAAAAwLcAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAAwMoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T15:38:45.487Z",
               "IsPinned": true,
@@ -53,7 +53,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Statics.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Classes\\Statics.cs",
               "RelativeDocumentMoniker": "..\\Day10\\Day10\\Classes\\Statics.cs",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Manager.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Classes\\Manager.cs",
               "RelativeDocumentMoniker": "..\\Day10\\Day10\\Classes\\Manager.cs",
@@ -80,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Employee.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Classes\\Employee.cs",
               "RelativeDocumentMoniker": "..\\Day10\\Day10\\Classes\\Employee.cs",
@@ -97,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Employee.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Classes\\Employee.cs",
               "RelativeDocumentMoniker": "..\\Day9\\Day9\\Classes\\Employee.cs",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day9\\Day9\\Program.cs",
               "RelativeDocumentMoniker": "..\\Day9\\Day9\\Program.cs",
@@ -123,13 +123,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Class1.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\SharedLib\\Class1.cs",
               "RelativeDocumentMoniker": "SharedLib\\Class1.cs",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\SharedLib\\Class1.cs",
-              "RelativeToolTip": "SharedLib\\Class1.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBEAAAAgAAAAAAAAAA==",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\DEPI_Sol\\SharedLib\\Class1.cs*",
+              "RelativeToolTip": "SharedLib\\Class1.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-23T14:56:49.37Z",
               "EditorCaption": ""
