@@ -140,7 +140,6 @@ namespace Day10
             WriteLine("Reverse:");
             Print(StrList);
             #endregion
-            */
 
             #region pb12
             problem(12);
@@ -157,12 +156,14 @@ namespace Day10
             IntDel = new Statics<int>.IntDelegate(Div);
             WriteLine($"{a} / {b} = "+Statics<int>.OpInt(a, b, IntDel));
 
-
             #endregion
+            */
 
             #region pb13
             problem(13);
-
+            double[] dbles = { 4.45, 45.3, 54.21};
+            int[] ints = Statics<double>.TransformList(dbles, n => (int)n);
+            Print(ints);
             #endregion
 
             #region pb14

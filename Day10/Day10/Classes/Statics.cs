@@ -41,6 +41,17 @@ namespace Day10.Classes
         public static int Div(int a, int b) => a / b;
         public static int OpInt(int a, int b, IntDelegate del) => del(a,b);
         #endregion
+
+        #region delegate T to R
+        public delegate R Transformer<T, R>(T item);
+        public static R[] TransformList<R>(T[] arr, Transformer<T,R> transformer)
+        {
+            R[] res = new R[arr.Length];
+            for(int i= 0; i<arr.Length; ++i)
+                res[i] = transformer(arr[i]);
+            return res;
+        }
+        #endregion
         public static void Swap(ref T a, ref T b)
         {
             (a, b) = (b, a);
