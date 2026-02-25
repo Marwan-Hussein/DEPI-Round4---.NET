@@ -21,7 +21,6 @@ namespace Day10
             Sort(emps, del);
             Print(emps); 
             #endregion
-            */
             #region pb2
             problem(2);
             int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
@@ -38,9 +37,17 @@ namespace Day10
             Print(arr3); // hi i'm maro
             #endregion
 
+            */
             #region pb4
             problem(4);
-
+            Manager[] mngers =
+            {
+                new Manager("zaki", 45000),
+                new Manager("shan", (int)8e4),
+                new Manager("ahmed", 8000)
+            };
+            Manager.Sort(mngers);
+            Print(mngers);
             #endregion
 
             #region pb5
