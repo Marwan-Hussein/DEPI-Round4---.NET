@@ -52,6 +52,16 @@ namespace Day10.Classes
             return res;
         }
         #endregion
+
+        #region squaring
+        public static T[] PerformFnc<T>(T[] arr, Func<T, T> func)
+        {
+            T[] res = new T[arr.Length];
+            for(int i=0; i<arr.Length; i++)
+                res[i] = func(arr[i]);
+            return res;
+        }
+        #endregion
         public static void Swap(ref T a, ref T b)
         {
             (a, b) = (b, a);

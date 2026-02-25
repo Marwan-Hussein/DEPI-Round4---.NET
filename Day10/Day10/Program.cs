@@ -157,7 +157,6 @@ namespace Day10
             WriteLine($"{a} / {b} = "+Statics<int>.OpInt(a, b, IntDel));
 
             #endregion
-            */
 
             #region pb13
             problem(13);
@@ -165,10 +164,13 @@ namespace Day10
             int[] ints = Statics<double>.TransformList(dbles, n => (int)n);
             Print(ints);
             #endregion
+            */
 
             #region pb14
             problem(14);
-
+            int[] arr14 = { 1, 2, 3, 4, 5, 6 };
+            int[] res14 = Statics<int>.PerformFnc(arr14, (a) => a * a);
+            Print(res14);
             #endregion
 
             #region pb15
