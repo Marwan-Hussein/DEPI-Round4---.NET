@@ -16,19 +16,24 @@ namespace Day10
         }
 
         // pb16
-        public static List<T> FilterList<T>(List<T> list, Predicate<T> baseAction)
+        public delegate bool StringDelegate(string str, string sub);
+        public static List<string> FilterList(List<string> list, StringDelegate del, string sub="")
         {
-            List<T> result = new List<T>();
-            foreach (T i in list)
-                if(baseAction(i))
-                    result.Add(i);
+            List<string> result = new List<string>();
+            for(int i=0; i< list.Count; i++)
+                if (del(list[i], sub))
+                    result.Add(list[i]);
             return result;
         }
 
         // pb17
-        public static bool StartWith(string s, char c) => char.ToLower(s[0]) == char.ToLower(c);
-        public static bool EndWith(string s, char c) => char.ToLower(s[s.Length -1]) == char.ToLower(c);
-
+        public static bool StartWith(string str, string sub)
+            => str.Substring(0, sub.Length).ToLower() == sub.ToLower();
+        public static bool EndWith(string str, string sub)
+            => str.Substring(str.Length - sub.Length, sub.Length).ToLower() == sub.ToLower();
+        public static bool Contains(string str, string sub)
+            => str.Contains(sub);
+        
         static void Main(string[] args)
         {
             // delegates
@@ -210,18 +215,19 @@ namespace Day10
 
             #region pb17
             problem(17);
-            List<string> strList = new List<string> {"alloc", "malloc","ant", "anydisk" };
+            List<string> strList = new List<string> {"alloc", "malloc","ant", "anydisk", "all"};
+            StringDelegate starts = new StringDelegate(StartWith);
             
-            Predicate<string> act = (str, ch) => StartWith(str, ch);
-            List<string> startWith = FilterList(strList, act);
-            Print(startWith);
+            List<string> startWith = FilterList(strList, starts, "an");
+            Print(startWith); // ant, anydisk
 
-            act = (str, ch) => EndWith(str, ch);
-            List<string> endWith = FilterList(strList, act);
-            Print(endWith);
- 
-            //List<string> startWith = FilterList(strList, act);
-            //Print(startWith);
+            StringDelegate ends = new StringDelegate(EndWith);
+            List<string> endWith = FilterList(strList, ends, "oc");
+            Print(endWith); // alloc, malloc
+
+             StringDelegate con = new StringDelegate(Contains);
+            List<string> contains = FilterList(strList, con, "all");
+            Print(contains); // alloc, malloc, all
 
             #endregion
 

@@ -43,9 +43,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Program.cs",
               "RelativeDocumentMoniker": "..\\Day10\\Day10\\Program.cs",
-              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Program.cs",
-              "RelativeToolTip": "..\\Day10\\Day10\\Program.cs",
-              "ViewState": "AgIAANEAAAAAAAAAAAAAwOUAAAAAAAAAAAAAAA==",
+              "ToolTip": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day10\\Day10\\Program.cs*",
+              "RelativeToolTip": "..\\Day10\\Day10\\Program.cs*",
+              "ViewState": "AgIAANcAAAAAAAAAAAAAAOAAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T15:38:45.487Z",
               "IsPinned": true,
@@ -62,8 +62,11 @@
               "ViewState": "AgIAADEAAAAAAAAAAAAAADgAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T15:42:40.711Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -75,8 +78,7 @@
               "RelativeToolTip": "..\\Day10\\Day10\\Classes\\Manager.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAQAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T01:40:48.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-25T01:40:48.004Z"
             },
             {
               "$type": "Document",
@@ -88,12 +90,7 @@
               "RelativeToolTip": "..\\Day10\\Day10\\Classes\\Employee.cs",
               "ViewState": "AgIAAHAAAAAAAAAAAAAcwHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T01:13:27.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2026-02-25T01:13:27.884Z"
             },
             {
               "$type": "Document",
@@ -105,8 +102,7 @@
               "RelativeToolTip": "..\\Day9\\Day9\\Classes\\Employee.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAAADIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T14:57:28.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T14:57:28.341Z"
             },
             {
               "$type": "Document",
@@ -118,8 +114,7 @@
               "RelativeToolTip": "..\\Day9\\Day9\\Program.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T14:52:44.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T14:52:44.506Z"
             },
             {
               "$type": "Document",
@@ -131,8 +126,7 @@
               "RelativeToolTip": "SharedLib\\Class1.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAwBwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T14:56:49.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T14:56:49.37Z"
             },
             {
               "$type": "Document",
@@ -144,8 +138,7 @@
               "RelativeToolTip": "..\\Day8\\Day8\\Day08.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-23T14:52:40.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-23T14:52:40.48Z"
             }
           ]
         }
