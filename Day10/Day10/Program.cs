@@ -26,7 +26,7 @@ namespace Day10
         }
 
         // pb18
-        public static int MathOp(int a, int b, Func<int, int, int> func)
+        public static T MathOp<T>(T a, T b, Func<T, T, T> func)
             => func(a, b);
         static void Main(string[] args)
         {
@@ -243,6 +243,8 @@ namespace Day10
 
             #region pb20
             problem(20);
+            WriteLine(MathOp(5d, 4d, (a, b) => a / b));               // 1.25
+            WriteLine(MathOp(5d, 3d, (a, b) => Math.Pow(a, b)));  // 125
 
             #endregion
         }
