@@ -15,18 +15,16 @@ namespace Day10
                 action(s);
         }
 
-        // pb16
-        public delegate bool StringDelegate(string str, string sub);
-        public static List<string> FilterList(List<string> list, StringDelegate del, string sub="")
+        // pb17
+        public static List<string> FilterList(List<string> list, Predicate<string> del)
         {
             List<string> result = new List<string>();
-            for(int i=0; i< list.Count; i++)
-                if (del(list[i], sub))
-                    result.Add(list[i]);
+            foreach(string x in list)
+                if (del(x))
+                    result.Add(x);
             return result;
         }
 
-        // pb17
         public static bool StartWith(string str, string sub)
             => str.Substring(0, sub.Length).ToLower() == sub.ToLower();
         public static bool EndWith(string str, string sub)
@@ -232,7 +230,6 @@ namespace Day10
             Print(contains); // alloc, malloc, all
 
             #endregion
-            */
             
             #region pb18
             problem(18);
@@ -243,6 +240,7 @@ namespace Day10
             WriteLine(MathOp(5, 3, (a, b) => (int)Math.Pow(a,b)));  // 125
 
             #endregion
+            */
 
             #region pb19
             problem(19);
