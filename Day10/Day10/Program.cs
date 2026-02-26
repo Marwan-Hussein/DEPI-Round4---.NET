@@ -33,7 +33,10 @@ namespace Day10
             => str.Substring(str.Length - sub.Length, sub.Length).ToLower() == sub.ToLower();
         public static bool Contains(string str, string sub)
             => str.Contains(sub);
-        
+
+        // pb18
+        public static int MathOp(int a, int b, Func<int, int, int> func)
+            => func(a, b);
         static void Main(string[] args)
         {
             // delegates
@@ -211,7 +214,6 @@ namespace Day10
             List<int> result = FilterList(list,BaseAction);
             Print(result);
             #endregion
-            */
 
             #region pb17
             problem(17);
@@ -230,9 +232,15 @@ namespace Day10
             Print(contains); // alloc, malloc, all
 
             #endregion
-
+            */
+            
             #region pb18
             problem(18);
+            WriteLine(MathOp(5, 4, (a, b) => a + b));               // 9
+            WriteLine(MathOp(5, 4, (a, b) => a - b));               // 1
+            WriteLine(MathOp(5, 4, (a, b) => a * b));               // 20
+            WriteLine(MathOp(5, 4, (a, b) => a / b));               // 1
+            WriteLine(MathOp(5, 3, (a, b) => (int)Math.Pow(a,b)));  // 125
 
             #endregion
 
