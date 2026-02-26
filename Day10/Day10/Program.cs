@@ -244,7 +244,9 @@ namespace Day10
 
             #region pb19
             problem(19);
-
+            List<string> strList = new List<string> { "alloc", "malloc", "ant", "anydisk", "all" };
+            Print(FilterList(strList, (string str) => str.StartsWith('a'))); // alloc, ant, anydisk, all
+            Print(FilterList(strList, (string str) => str.Length > 3)); // alloc, malloc, anydisk
             #endregion
 
             #region pb20
