@@ -25,13 +25,6 @@ namespace Day10
             return result;
         }
 
-        public static bool StartWith(string str, string sub)
-            => str.Substring(0, sub.Length).ToLower() == sub.ToLower();
-        public static bool EndWith(string str, string sub)
-            => str.Substring(str.Length - sub.Length, sub.Length).ToLower() == sub.ToLower();
-        public static bool Contains(string str, string sub)
-            => str.Contains(sub);
-
         // pb18
         public static int MathOp(int a, int b, Func<int, int, int> func)
             => func(a, b);
@@ -212,21 +205,22 @@ namespace Day10
             List<int> result = FilterList(list,BaseAction);
             Print(result);
             #endregion
+            */
 
             #region pb17
             problem(17);
-            List<string> strList = new List<string> {"alloc", "malloc","ant", "anydisk", "all"};
-            StringDelegate starts = new StringDelegate(StartWith);
-            
-            List<string> startWith = FilterList(strList, starts, "an");
+            List<string> strList = new List<string> { "alloc", "malloc", "ant", "anydisk", "all" };
+
+            Predicate<string> starts = delegate (string x) { return x.StartsWith("an"); };
+            List<string> startWith = FilterList(strList, starts);
             Print(startWith); // ant, anydisk
 
-            StringDelegate ends = new StringDelegate(EndWith);
-            List<string> endWith = FilterList(strList, ends, "oc");
+            Predicate<string> ends = delegate (string x) { return x.EndsWith("oc"); };
+            List<string> endWith = FilterList(strList, ends);
             Print(endWith); // alloc, malloc
 
-             StringDelegate con = new StringDelegate(Contains);
-            List<string> contains = FilterList(strList, con, "all");
+            Predicate<string> con = delegate (string x) { return x.Contains("all"); };
+            List<string> contains = FilterList(strList, con);
             Print(contains); // alloc, malloc, all
 
             #endregion
@@ -240,11 +234,9 @@ namespace Day10
             WriteLine(MathOp(5, 3, (a, b) => (int)Math.Pow(a,b)));  // 125
 
             #endregion
-            */
 
             #region pb19
             problem(19);
-            List<string> strList = new List<string> { "alloc", "malloc", "ant", "anydisk", "all" };
             Print(FilterList(strList, (string str) => str.StartsWith('a'))); // alloc, ant, anydisk, all
             Print(FilterList(strList, (string str) => str.Length > 3)); // alloc, malloc, anydisk
             #endregion
