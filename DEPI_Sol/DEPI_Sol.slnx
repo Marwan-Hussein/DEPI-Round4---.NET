@@ -6,6 +6,7 @@
   <Project Path="../Day7/Day7/Day07.csproj" Id="2a5c8f1b-3d9e-47b2-9a1c-5f7e8d2b4c6a" />
   <Project Path="../Day8/Day8/Day08.csproj" Id="6fc55be0-27c9-4846-b698-dc32d7df8136" />
   <Project Path="../Day9/Day9/Day09.csproj" Id="29a29c67-e2e8-41d3-8b2a-05df86c13a63" />
+  <Project Path="../LINQ/Day2/Day02/Day02.csproj" Id="4b5cbb62-d642-4be3-b830-acb230ac8b42" />
   <Project Path="../Test/Test.csproj" Id="ae64b88a-481b-46ba-b855-46e07a9407f0" />
   <Project Path="SharedLib/SharedLib.csproj" Id="45f4794b-c26f-46a8-9f68-0131049d6df7" />
 </Solution>
