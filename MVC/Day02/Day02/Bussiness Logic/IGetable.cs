@@ -1,4 +1,4 @@
-﻿using Day02.Data.DbContexts;
+using Day02.Data.DbContexts;
 
 namespace Day02.Bussiness_Logic
 {
