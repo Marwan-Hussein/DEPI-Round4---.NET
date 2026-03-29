@@ -11,6 +11,7 @@ namespace Day02.Models
 
         public int Age { get; set; }
         
+        // FK
         public int DepartmentId { get; set; }
 
         // Navigation properties (NPs)
