@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "B:\\programming\\VSCode projects\\C#\\Day02\\Day02.csproj": {}
+    "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day2\\Day02\\Day02.csproj": {}
   },
   "projects": {
-    "B:\\programming\\VSCode projects\\C#\\Day02\\Day02.csproj": {
+    "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day2\\Day02\\Day02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\programming\\VSCode projects\\C#\\Day02\\Day02.csproj",
+        "projectUniqueName": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day2\\Day02\\Day02.csproj",
         "projectName": "Day02",
-        "projectPath": "B:\\programming\\VSCode projects\\C#\\Day02\\Day02.csproj",
+        "projectPath": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day2\\Day02\\Day02.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "B:\\programming\\VSCode projects\\C#\\Day02\\obj\\",
+        "outputPath": "B:\\Interns\\DEPI 2025-2026 FullStack .net\\DEPI-Round4---.NET\\Day2\\Day02\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
