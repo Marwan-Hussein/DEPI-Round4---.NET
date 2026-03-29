@@ -6,11 +6,11 @@ namespace Day02.Controllers
 {
     public class StudentController : Controller
     {
-        // Student/Details?id=5
-        public IActionResult Details(int id)
+        // Student/ShowDetails?id=5
+        public IActionResult ShowDetails(int id)
         {
             IGetable<Student> getable = new StudentBL();
-            return View("Details", getable.GetById(id));
+            return View("ShowDetails", getable.GetById(id));
         }
 
         // Student/ShowAll
