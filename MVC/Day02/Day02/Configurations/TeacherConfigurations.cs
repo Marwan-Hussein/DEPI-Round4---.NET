@@ -4,10 +4,12 @@ using Day02.Models;
 
 namespace Day02.Configurations
 {
-    public class TeacherConfigurations
+    public class TeacherConfigurations : IEntityTypeConfiguration<Teacher>
     {
         public void Configure(EntityTypeBuilder<Teacher> Teacher)
         {
+            Teacher.ToTable("Teachers");
+
             Teacher.HasKey(T => T.Id);
             Teacher.Property(T => T.Salary)
                 .HasPrecision(6, 2);
