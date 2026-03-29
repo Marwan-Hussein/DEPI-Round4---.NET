@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Reflection;
 using Day02.Models;
-using Day02.Configurations;
-namespace Day02.DbContexts
+using Day02.Data.Configurations;
+namespace Day02.Data.DbContexts
 {
     public class CollegeSystemDbContext : DbContext
     {

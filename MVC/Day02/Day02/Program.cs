@@ -1,3 +1,6 @@
+using Day02.Data;
+using Day02.Data.DbContexts;
+
 namespace Day02
 {
     public class Program
@@ -25,6 +28,13 @@ namespace Day02
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            // Seed randomized data on first run (skips if DB already has records)
+            using (var scope = app.Services.CreateScope())
+            {
+                var db = new CollegeSystemDbContext();
+                DatabaseSeeder.Seed(db);
+            }
 
             app.Run();
         }

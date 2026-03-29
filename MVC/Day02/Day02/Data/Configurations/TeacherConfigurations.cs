@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Day02.Models;
 
-namespace Day02.Configurations
+namespace Day02.Data.Configurations
 {
     public class TeacherConfigurations : IEntityTypeConfiguration<Teacher>
     {
