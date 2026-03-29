@@ -1,4 +1,4 @@
-﻿@model Day02.Models.Student
+@model Day02.Models.Student
 
 @{
     ViewData["Title"] = "ShowDetails";
@@ -6,8 +6,49 @@
 
 <h1>Student Details:</h1>
 
-<h2>@Model.Id </h2>
-<h2>@Model.Name </h2>
-<h2>@Model.Age </h2>
-<h2>@Model.Department.Name </h2>
+@if (Model == null)
+{
+    <div class="alert alert-warning mt-3">No student found with the given ID.</div>
+}
+else
+{
 
+    <br>
+    <h5>ID: </h5>
+    <div class="card mt-3" style="width: 18rem;">
+        <div class="card-body">
+            <h6>@Model.Id</h6>
+        </div>
+    </div>
+
+    <br>
+    <h5>Name: </h5>
+    <div class="card mt-3" style="width: 18rem;">
+        <div class="card-body">
+            <h6>@Model.Name</h6>
+        </div>
+    </div>
+
+    <br>
+    <h5>Age: </h5>
+    <div class="card mt-3" style="width: 18rem;">
+        <div class="card-body">
+            <h6>@Model.Age</h6>
+        </div>
+    </div>
+    
+    <br>
+    <h5>Department:</h5>
+    <div class="card mt-3" style="width: 18rem;">
+        <div class="card-body">
+            @if (@Model.Department == null) 
+            {
+                <h6>N/A</h6> 
+            }
+            else
+            {
+                <h6>@Model.Department.Name </h6>
+            }
+        </div>
+    </div>
+}
