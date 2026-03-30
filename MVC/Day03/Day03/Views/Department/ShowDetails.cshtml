@@ -1,10 +1,10 @@
-@model Day03.Models.Student
+﻿@model Day03.Models.Department
 
 @{
     ViewData["Title"] = "ShowDetails";
 }
 
-<h1>Student Details:</h1>
+<h1>Department Details:</h1>
 
 @if (Model == null)
 {
@@ -40,12 +40,12 @@ else
 
     <div class="row mb-2">
         <div class="col-3">
-            <h5 class="mt-1 mb-1">Age:</h5>
+            <h5 class="mt-1 mb-1">Manager Name:</h5>
         </div>
         <div class="col-6">
             <div class="card mt-1">
                 <div class="card-body pt-1 pb-1">
-                    <h6>@Model.Age</h6>
+                    <h6>@Model.MgrName</h6>
                 </div>
             </div>
         </div>
@@ -53,12 +53,38 @@ else
 
     <div class="row mb-2">
         <div class="col-3">
-            <h5 class="mt-1 mb-1">Department:</h5>
+            <h5 class="mt-1 mb-1">#Teachers:</h5>
         </div>
         <div class="col-6">
             <div class="card mt-1">
                 <div class="card-body pt-1 pb-1">
-                    <h6>@Model.Department?.Name</h6>
+                    <h6>@Model.Count(Model.Teachers)</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-3">
+            <h5 class="mt-1 mb-1">#Courses:</h5>
+        </div>
+        <div class="col-6">
+            <div class="card mt-1">
+                <div class="card-body pt-1 pb-1">
+                    <h6>@Model.Count(Model.Courses)</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-3">
+            <h5 class="mt-1 mb-1">#Students:</h5>
+        </div>
+        <div class="col-6">
+            <div class="card mt-1">
+                <div class="card-body pt-1 pb-1">
+                    <h6>@Model.Count(Model.Students)</h6>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Day02.Migrations
+namespace Day03.Migrations
 {
     /// <inheritdoc />
     public partial class MakeAllModelsAsTables : Migration

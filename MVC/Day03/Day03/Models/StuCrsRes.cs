@@ -1,4 +1,4 @@
-﻿namespace Day02.Models
+﻿namespace Day03.Models
 {
     public class StuCrsRes
     {

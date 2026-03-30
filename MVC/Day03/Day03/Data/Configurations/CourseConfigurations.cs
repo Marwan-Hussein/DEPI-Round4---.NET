@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Day02.Models;
+using Day03.Models;
 
-namespace Day02.Data.Configurations
+namespace Day03.Data.Configurations
 {
     public class CourseConfigurations : IEntityTypeConfiguration<Course>
     {

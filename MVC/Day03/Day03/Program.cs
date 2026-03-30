@@ -1,7 +1,7 @@
-using Day02.Data;
-using Day02.Data.DbContexts;
+using Day03.Data;
+using Day03.Data.DbContexts;
 
-namespace Day02
+namespace Day03
 {
     public class Program
     {

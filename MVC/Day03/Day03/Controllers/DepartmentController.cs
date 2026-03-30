@@ -1,8 +1,8 @@
-﻿using Day02.Bussiness_Logic;
-using Day02.Models;
+﻿using Day03.Bussiness_Logic;
+using Day03.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Day02.Controllers
+namespace Day03.Controllers
 {
     public class DepartmentController : Controller
     {

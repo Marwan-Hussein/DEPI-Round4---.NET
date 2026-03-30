@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Day02.Models
+namespace Day03.Models
 {
     public class Student
     {

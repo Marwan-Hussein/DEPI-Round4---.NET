@@ -1,7 +1,7 @@
-using Day02.Data.DbContexts;
-using Day02.Models;
+using Day03.Data.DbContexts;
+using Day03.Models;
 
-namespace Day02.Data
+namespace Day03.Data
 {
     public static class DatabaseSeeder
     {
