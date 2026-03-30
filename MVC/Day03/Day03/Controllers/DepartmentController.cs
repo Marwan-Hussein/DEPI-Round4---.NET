@@ -1,0 +1,24 @@
+﻿using Day02.Bussiness_Logic;
+using Day02.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Day02.Controllers
+{
+    public class DepartmentController : Controller
+    {
+        // Department/ShowDetails?id=5
+        public IActionResult ShowDetails(int id = 1)
+        {
+            IGetable<Department> getable = new DepartmentBL();
+            var dept = getable.GetById(id);
+            return View("ShowDetails", dept);  // dept may be null; view handles it
+        }
+
+        // Department/ShowAll
+        public IActionResult ShowAll()
+        {
+            IGetable<Department> getable = new DepartmentBL();
+            return View("ShowAll", getable.GetAll());
+        }
+    }
+}
