@@ -1,9 +1,10 @@
-﻿using Day03.Data.DbContexts;
+﻿using Day03.Bussiness_Logic;
+using Day03.Data.DbContexts;
 using Day03.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Day03.Bussiness_Logic
+namespace Day03.Business_Logic
 {
     public class DepartmentBL : IGetable<Department>
     {

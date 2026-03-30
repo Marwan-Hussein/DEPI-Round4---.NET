@@ -1,6 +1,6 @@
 using Day03.Data.DbContexts;
 
-namespace Day03.Bussiness_Logic
+namespace Day03.Business_Logic
 {
     public interface IGetable<T>
     {

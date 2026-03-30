@@ -1,4 +1,4 @@
-using Day03.Bussiness_Logic;
+using Day03.Business_Logic;
 using Day03.Models;
 using Microsoft.AspNetCore.Mvc;
 
