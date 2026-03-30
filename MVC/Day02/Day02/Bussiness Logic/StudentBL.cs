@@ -11,12 +11,18 @@ namespace Day02.Bussiness_Logic
 
         List<Student> IGetable<Student>.GetAll()
         {
-            return Context.Students.Include(s => s.Department).Include(s => s.StuCrsResult).ToList();
+            return Context.Students
+                .Include(s => s.Department)
+                .Include(s => s.StuCrsResult)
+                .ToList();
         }
 
         Student IGetable<Student>.GetById(int id)
         {
-            return Context.Students.FirstOrDefault(s => s.Id == id);
+            return Context.Students
+                .Include(s => s.Department)
+                .Include(s => s.StuCrsResult)
+                .FirstOrDefault(s => s.Id == id);
         }
     }
 }
