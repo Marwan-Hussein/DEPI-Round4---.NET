@@ -3,7 +3,7 @@ using Day03.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Day03.Bussiness_Logic
+namespace Day03.Business_Logic
 {
     public class StudentBL : IGetable<Student>
     {
