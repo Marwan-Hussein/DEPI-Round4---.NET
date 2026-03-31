@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Day03.Data.DbContexts;
 using Day03.Models;
 
@@ -36,6 +37,9 @@ namespace Day03.Data
         /// </summary>
         public static void Seed(CollegeSystemDbContext db)
         {
+            // Ensure schema exists/up-to-date before inserting seed data.
+            db.Database.Migrate();
+
             // 1. Departments
             var departments = db.Departments.ToList();
             if (!departments.Any())
