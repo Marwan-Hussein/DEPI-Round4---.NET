@@ -13,12 +13,18 @@ namespace Day03.Business_Logic
         List<Department> IGetable<Department>.GetAll()
         {
             return Context.Departments
+                .Include(D => D.Teachers)
+                .Include(D => D.Courses)
+                .Include(D => D.Students)
                 .ToList();
         }
 
         Department IGetable<Department>.GetById(int id)
         {
             return Context.Departments
+                .Include(D => D.Teachers)
+                .Include(D => D.Courses)
+                .Include(D => D.Students)
                 .FirstOrDefault(s => s.Id == id);
         }
     }
