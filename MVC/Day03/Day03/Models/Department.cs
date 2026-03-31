@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace Day03.Models
 {
@@ -10,6 +10,13 @@ namespace Day03.Models
         public string Name { get; set; }
 
         public string? MgrName { get; set; }
+
+        public Department()
+        {
+            Teachers = new List<Teacher>();
+            Courses = new List<Course>();
+            Students = new List<Student>();
+        }
 
         // Navigation properties (NPs)
         public List<Teacher> Teachers { get; set; }

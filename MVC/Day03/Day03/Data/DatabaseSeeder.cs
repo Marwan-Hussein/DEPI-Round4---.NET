@@ -36,23 +36,38 @@ namespace Day03.Data
         /// </summary>
         public static void Seed(CollegeSystemDbContext db)
         {
-            // Guard: only seed on an empty database
-            if (db.Departments.Any()) return;
-
             // 1. Departments
-            var departments = SeedDepartments(db);
+            var departments = db.Departments.ToList();
+            if (!departments.Any())
+            {
+                departments = SeedDepartments(db);
+            }
 
             // 2. Courses (depend on departments)
-            var courses = SeedCourses(db, departments);
+            var courses = db.Courses.ToList();
+            if (!courses.Any() && departments.Any())
+            {
+                courses = SeedCourses(db, departments);
+            }
 
             // 3. Students (depend on departments)
-            var students = SeedStudents(db, departments);
+            var students = db.Students.ToList();
+            if (!students.Any() && departments.Any())
+            {
+                students = SeedStudents(db, departments);
+            }
 
             // 4. Teachers (depend on departments + courses)
-            SeedTeachers(db, departments, courses);
+            if (!db.Teachers.Any() && departments.Any() && courses.Any())
+            {
+                SeedTeachers(db, departments, courses);
+            }
 
             // 5. StuCrsRes – composite PK (StudentId, CourseId)
-            SeedStuCrsRes(db, students, courses);
+            if (!db.StuCrsRes.Any() && students.Any() && courses.Any())
+            {
+                SeedStuCrsRes(db, students, courses);
+            }
         }
 
         // ── private helpers ─────────────────────────────────────────────
