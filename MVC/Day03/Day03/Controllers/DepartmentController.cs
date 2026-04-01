@@ -39,6 +39,7 @@ namespace Day03.Controllers
                 return View("Add", dept);
             departmentBL.Add(dept);
             return RedirectToAction(nameof(Index));
+
         }
     }
 }
