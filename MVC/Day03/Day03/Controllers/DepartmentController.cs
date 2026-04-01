@@ -6,7 +6,9 @@ namespace Day03.Controllers
 {
     public class DepartmentController : Controller
     {
+        DepartmentBL departmentBL = new DepartmentBL();
         // Department/Index
+        [HttpGet]
         public IActionResult Index() // => default action
         {
             IGetable<Department> getable = new DepartmentBL();
@@ -14,6 +16,7 @@ namespace Day03.Controllers
         }
 
         // Department/ShowDetails?id=5
+        [HttpGet]
         public IActionResult ShowDetails(int id = 1)
         {
             IGetable<Department> getable = new DepartmentBL();
@@ -23,8 +26,19 @@ namespace Day03.Controllers
 
 
         // Department/Add
+        [HttpGet]
         public IActionResult Add(Department department)
         {
+            return View("Add");
+        }
+
+        [HttpPost]
+        public IActionResult SaveAdd(Department dept) 
+        { 
+            if(dept.Name == null)
+                return View("Add", dept);
+            departmentBL.Add(dept);
+            return RedirectToAction(nameof(Index));
         }
     }
 }
