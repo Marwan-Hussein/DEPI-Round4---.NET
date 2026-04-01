@@ -28,6 +28,10 @@ namespace Day03.Business_Logic
                 .FirstOrDefault(s => s.Id == id);
         }
 
+        public bool Contains(string name)
+            => Context.Departments
+                .Any(d => d.Name == name);
+
         public void Add(Department department)
         {
             Context.Departments.Add(department);

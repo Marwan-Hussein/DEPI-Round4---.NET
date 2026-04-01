@@ -35,7 +35,7 @@ namespace Day03.Controllers
         [HttpPost]
         public IActionResult SaveAdd(Department dept) 
         { 
-            if(dept.Name == null)
+            if(dept.Name == null || departmentBL.Contains(dept.Name))
                 return View("Add", dept);
             departmentBL.Add(dept);
             return RedirectToAction(nameof(Index));
