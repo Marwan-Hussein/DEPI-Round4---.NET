@@ -27,5 +27,7 @@ namespace Day03.Business_Logic
                 .Include(D => D.Students)
                 .FirstOrDefault(s => s.Id == id);
         }
+
+        
     }
 }

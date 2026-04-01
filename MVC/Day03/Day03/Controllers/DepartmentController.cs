@@ -6,6 +6,13 @@ namespace Day03.Controllers
 {
     public class DepartmentController : Controller
     {
+        // Department/Index
+        public IActionResult Index() // => default action
+        {
+            IGetable<Department> getable = new DepartmentBL();
+            return View("Index", getable.GetAll());
+        }
+
         // Department/ShowDetails?id=5
         public IActionResult ShowDetails(int id = 1)
         {
@@ -14,11 +21,10 @@ namespace Day03.Controllers
             return View("ShowDetails", dept);  // dept may be null; view handles it
         }
 
-        // Department/Index
-        public IActionResult Index() // => default action
+
+        // Department/Add
+        public IActionResult Add(Department department)
         {
-            IGetable<Department> getable = new DepartmentBL();
-            return View("Index", getable.GetAll());
         }
     }
 }

@@ -6,6 +6,13 @@ namespace Day03.Controllers
 {
     public class StudentController : Controller
     {
+        // Student/Index
+        public IActionResult Index() // => default action
+        {
+            IGetable<Student> getable = new StudentBL();
+            return View("Index", getable.GetAll());
+        }
+
         // Student/ShowDetails?id=5
         public IActionResult ShowDetails(int id = 1)
         {
@@ -14,11 +21,5 @@ namespace Day03.Controllers
             return View("ShowDetails", student);  // student may be null; view handles it
         }
 
-        // Student/Index
-        public IActionResult Index() // => default action
-        {
-            IGetable<Student> getable = new StudentBL();
-            return View("Index", getable.GetAll());
-        }
     }
 }
