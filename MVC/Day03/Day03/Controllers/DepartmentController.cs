@@ -14,11 +14,11 @@ namespace Day03.Controllers
             return View("ShowDetails", dept);  // dept may be null; view handles it
         }
 
-        // Department/ShowAll
-        public IActionResult ShowAll()
+        // Department/Index
+        public IActionResult Index() // => default action
         {
             IGetable<Department> getable = new DepartmentBL();
-            return View("ShowAll", getable.GetAll());
+            return View("Index", getable.GetAll());
         }
     }
 }

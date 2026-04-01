@@ -14,11 +14,11 @@ namespace Day03.Controllers
             return View("ShowDetails", student);  // student may be null; view handles it
         }
 
-        // Student/ShowAll
-        public IActionResult ShowAll()
+        // Student/Index
+        public IActionResult Index() // => default action
         {
             IGetable<Student> getable = new StudentBL();
-            return View("ShowAll", getable.GetAll());
+            return View("Index", getable.GetAll());
         }
     }
 }
