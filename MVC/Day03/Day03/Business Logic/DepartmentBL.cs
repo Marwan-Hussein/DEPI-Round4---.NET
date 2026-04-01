@@ -28,6 +28,17 @@ namespace Day03.Business_Logic
                 .FirstOrDefault(s => s.Id == id);
         }
 
+        public void Add(Department department)
+        {
+            Context.Departments.Add(department);
+            Context.SaveChanges();
+        }
+
+        //public void Delete(int id) 
+        //{
+        //    var dept = Context.Departments.Select(d => d.Id).FirstOrDefault();
+        //    Context.Departments.Remove(dept);
+        //}
         
     }
 }
