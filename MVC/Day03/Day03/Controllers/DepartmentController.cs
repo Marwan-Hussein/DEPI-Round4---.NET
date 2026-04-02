@@ -27,7 +27,7 @@ namespace Day03.Controllers
 
 
         [HttpGet]
-        public IActionResult DetailsVM() // Department/Extra Info
+        public IActionResult DetailsVM() // Department/ExtraInfo
         {
             IGetable<Department> getable = new DepartmentBL();
             var depts = getable.GetAll();
@@ -47,7 +47,7 @@ namespace Day03.Controllers
                 });
             }
 
-            return View("ExtraInfo");
+            return View("ExtraInfo", vMs);
         }
 
         // Department/Add
