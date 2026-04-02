@@ -1,0 +1,39 @@
+﻿@model List<Department>
+
+<form method="get" action="/Department/ShowDetails" class="d-flex gap-2 align-items-center">
+	<input type="number" name="id" class="form-control" placeholder="Enter Department ID" min="1" required />
+	<button type="submit" class="btn btn-secondary" style="width:max-content">Show Details</button>
+</form>
+
+<table class="table table-hover table-bordered">
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Manager Name</th>
+
+		<th># Teachers</th>
+		<th># Courses</th>
+		<th># Students</th>
+
+	</tr>
+
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>@item.Id </td>
+			<td>@item.Name </td>
+			<td>@item.MgrName </td>
+
+			<td>@item.Teachers?.Count() </td>
+			<td>@item.Courses?.Count() </td>
+			<td>@item.Students?.Count() </td>
+
+		</tr>
+	}
+
+</table>
+
+<form method="get" action="/Department/Add" class="d-flex gap-2 align-items-center">
+	<button class="btn btn-success">Add New</button>
+</form>
+<a href="/Department/ExtraInfo"> for more info</a>

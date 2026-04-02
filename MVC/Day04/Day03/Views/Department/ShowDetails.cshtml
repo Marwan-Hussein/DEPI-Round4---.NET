@@ -1,0 +1,92 @@
+@model Day04.Models.Department
+
+@{
+    ViewData["Title"] = "ShowDetails";
+}
+
+<h1>Department Details:</h1>
+
+@if (Model == null)
+{
+    <div class="alert alert-warning mt-3">No department found with the given ID.</div>
+}
+else
+{
+    <div class="row mb-2">
+        <div class="col-3">
+            <h5 class="mt-1 mb-1">ID:</h5>
+        </div>
+        <div class="col-6">
+            <div class="card mt-1">
+                <div class="card-body pt-1 pb-1">
+                    <h6>@Model.Id</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-3">
+            <h5 class="mt-1 mb-1">Name:</h5>
+        </div>
+        <div class="col-6">
+            <div class="card mt-1">
+                <div class="card-body pt-1 pb-1">
+                    <h6>@Model.Name</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-3">
+            <h5 class="mt-1 mb-1">Manager Name:</h5>
+        </div>
+        <div class="col-6">
+            <div class="card mt-1">
+                <div class="card-body pt-1 pb-1">
+                    <h6>@Model.MgrName</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-3">
+            <h5 class="mt-1 mb-1">#Teachers:</h5>
+        </div>
+        <div class="col-6">
+            <div class="card mt-1">
+                <div class="card-body pt-1 pb-1">
+                    <h6>@Model.Teachers?.Count()</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-3">
+            <h5 class="mt-1 mb-1">#Courses:</h5>
+        </div>
+        <div class="col-6">
+            <div class="card mt-1">
+                <div class="card-body pt-1 pb-1">
+                    <h6>@Model.Courses?.Count()</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-3">
+            <h5 class="mt-1 mb-1">#Students:</h5>
+        </div>
+        <div class="col-6">
+            <div class="card mt-1">
+                <div class="card-body pt-1 pb-1">
+                    <h6>@Model.Students?.Count()</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+}
