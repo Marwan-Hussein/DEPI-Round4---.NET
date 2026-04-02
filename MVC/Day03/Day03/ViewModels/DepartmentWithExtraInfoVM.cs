@@ -8,6 +8,6 @@ namespace Day03.ViewModels
         public int TotStudents { get; set; }
 
         public string State { get; set; }
-        public List<Student> StudentsEx25{ get; set; }
+        public List<string> StudentsEx25Names{ get; set; }
     }
 }

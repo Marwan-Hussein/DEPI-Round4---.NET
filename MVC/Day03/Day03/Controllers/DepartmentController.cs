@@ -40,7 +40,7 @@ namespace Day03.Controllers
                 {
                     DepName = dept.Name,
                     TotStudents = CountAndEx25.Key,
-                    StudentsEx25 = CountAndEx25.Value,
+                    StudentsEx25Names = CountAndEx25.Value,
                     State = dept.Students
                         .Count() >= 50 ? "Main" : "Branch"
 

@@ -32,13 +32,13 @@ namespace Day03.Business_Logic
             => Context.Departments
                 .Any(d => d.Name == name);
 
-        public KeyValuePair<int, List<Student>> Filter(Department dept, Func<Student, bool> predicate)
+        public KeyValuePair<int, List<string>> Filter(Department dept, Func<Student, bool> predicate)
         {
-            List<Student> students = new List<Student>();
+            List<string> studentsNames= new List<string>();
             foreach (Student student in dept.Students)
                 if (predicate(student))
-                    students.Add(student);
-            return KeyValuePair.Create(dept.Students.Count(), students);
+                    studentsNames.Add(student.Name);
+            return KeyValuePair.Create(dept.Students.Count(), studentsNames);
         }
 
         public void Add(Department department)
