@@ -1,4 +1,4 @@
-﻿using Day03.Business_Logic;
+using Day03.Business_Logic;
 using Day03.Models;
 using Day03.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +27,7 @@ namespace Day03.Controllers
 
 
         [HttpGet]
-        public IActionResult DetailsVM() // Department/ExtraInfo
+        public IActionResult ExtraInfo() // Department/ExtraInfo
         {
             IGetable<Department> getable = new DepartmentBL();
             var depts = getable.GetAll();
