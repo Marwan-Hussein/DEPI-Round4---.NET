@@ -1,5 +1,6 @@
 ﻿using Day03.Business_Logic;
 using Day03.Models;
+using Day03.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Day03.Controllers
@@ -24,6 +25,30 @@ namespace Day03.Controllers
             return View("ShowDetails", dept);  // dept may be null; view handles it
         }
 
+
+        [HttpGet]
+        public IActionResult DetailsVM() // Department/Extra Info
+        {
+            IGetable<Department> getable = new DepartmentBL();
+            var depts = getable.GetAll();
+
+            List<DepartmentWithExtraInfoVM> vMs = new List<DepartmentWithExtraInfoVM>();
+            foreach (var dept in depts)
+            {
+                var CountAndEx25 = departmentBL.Filter(dept, S => S.Age >= 25);
+                vMs.Add(new DepartmentWithExtraInfoVM()
+                {
+                    DepName = dept.Name,
+                    TotStudents = CountAndEx25.Key,
+                    StudentsEx25 = CountAndEx25.Value,
+                    State = dept.Students
+                        .Count() >= 50 ? "Main" : "Branch"
+
+                });
+            }
+
+            return View("ExtraInfo");
+        }
 
         // Department/Add
         [HttpGet]
