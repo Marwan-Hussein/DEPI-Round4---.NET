@@ -24,5 +24,11 @@ namespace Day04.Business_Logic
                 .Include(s => s.StuCrsResult)
                 .FirstOrDefault(s => s.Id == id);
         }
+
+        public void Add(Student student)
+        {
+            Context.Students.Add(student);
+            Context.SaveChanges();
+        }
     }
 }
