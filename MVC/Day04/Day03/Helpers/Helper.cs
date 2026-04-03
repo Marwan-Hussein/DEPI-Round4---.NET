@@ -9,8 +9,8 @@ namespace Day04.Helpers
     {
         static readonly CollegeSystemDbContext _db = new();
         
-        public static int Count<TEntity>() where TEntity : class
-            => _db.Set<TEntity>().Count();
+        //public static int Count<TEntity>() where TEntity : class
+        //    => _db.Set<TEntity>().Count();
 
     }
 }

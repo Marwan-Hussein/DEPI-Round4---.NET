@@ -39,7 +39,8 @@ namespace Day04.Controllers
                 vMs.Add(new DepartmentWithExtraInfoVM()
                 {
                     DepName = dept.Name,
-                    TotStudents = Helper.Count<Student>(),
+                    //TotStudents = Helper.Count<Student>(),
+                    TotStudents = dept.Students.Count(),
                     StudentsEx25 = dept.Students.Where(S => S.Age >= 25).ToList(),
                     State = dept.Students
                         .Count() >= 50 ? "Main" : "Branch"
