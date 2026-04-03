@@ -28,7 +28,7 @@ namespace Day04.Controllers
         [HttpPost]
         public IActionResult SaveAdd(Student std)
         {
-            if(std.Name == null || std.Age <= 0 || std.DepartmentId <= 1)
+            if(std.Name == null || std.Age <= 0 || std.DepartmentId < 1)
             {
                 ViewBag.Error = "Invalid input. Please fill all fields correctly.";
                 return View("Add");
