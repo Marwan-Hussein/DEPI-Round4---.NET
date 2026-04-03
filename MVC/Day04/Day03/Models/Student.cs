@@ -17,5 +17,7 @@ namespace Day04.Models
         // Navigation properties (NPs)
         public Department Department { get; set; }
         public List<StuCrsRes> StuCrsResult { get; set; }
+
+        public override string ToString() => Name;
     }
 }
