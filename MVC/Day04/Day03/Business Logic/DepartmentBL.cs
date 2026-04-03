@@ -32,9 +32,9 @@ namespace Day04.Business_Logic
             => Context.Departments
                 .Any(d => d.Name == name);
 
-        public int Count()
+        /*public int Count()
             => Context.Departments
-                .Count();
+                .Count();*/
 
         public void Add(Department department)
         {
