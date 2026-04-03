@@ -1,4 +1,5 @@
 using Day04.Business_Logic;
+using Day04.Helpers;
 using Day04.Models;
 using Day04.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -35,12 +36,11 @@ namespace Day04.Controllers
             List<DepartmentWithExtraInfoVM> vMs = new List<DepartmentWithExtraInfoVM>();
             foreach (var dept in depts)
             {
-                var CountAndEx25 = departmentBL.Filter(dept, S => S.Age >= 25);
                 vMs.Add(new DepartmentWithExtraInfoVM()
                 {
                     DepName = dept.Name,
-                    TotStudents = CountAndEx25.Key,
-                    StudentsEx25Names = CountAndEx25.Value,
+                    TotStudents = departmentBL.Count(),
+                    StudentsEx25Names = Helper.Filter(dept, S=> S.Age >= 25).ToList(),
                     State = dept.Students
                         .Count() >= 50 ? "Main" : "Branch"
 
