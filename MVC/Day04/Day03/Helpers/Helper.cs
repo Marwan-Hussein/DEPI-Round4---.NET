@@ -1,15 +1,14 @@
-﻿using Day04.Data.DbContexts;
-using Day04.Models;
-using Microsoft.EntityFrameworkCore;
-using System.ComponentModel;
+using System.Collections.Generic;
+
 namespace Day04.Helpers
 {
-    public class Helper
+    public static class Helper
     {
-        CollegeSystemDbContext context = new CollegeSystemDbContext();
-        public static IEnumerable<Element> Filter<_Container, Element>(_Container container, Func<Element, bool> predicate) where _Container : Container<Element>
+        public static IEnumerable<T> Filter<T>(this IEnumerable<T> source, Func<T, bool> predicate)
         {
-            foreach (Element element in container)
+            ArgumentNullException.ThrowIfNull(source);
+            ArgumentNullException.ThrowIfNull(predicate);
+            foreach (T element in source)
                 if (predicate(element))
                     yield return element;
         }
