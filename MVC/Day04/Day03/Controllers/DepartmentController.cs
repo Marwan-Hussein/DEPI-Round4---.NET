@@ -40,7 +40,7 @@ namespace Day04.Controllers
                 {
                     DepName = dept.Name,
                     TotStudents = Helper.Count<Student>(),
-                    StudentsEx25 = dept.Students.Filter(S => S.Age >= 25).ToList(),
+                    StudentsEx25 = dept.Students.Where(S => S.Age >= 25).ToList(),
                     State = dept.Students
                         .Count() >= 50 ? "Main" : "Branch"
 
