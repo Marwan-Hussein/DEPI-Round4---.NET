@@ -1,67 +1,35 @@
-﻿<div id="scrollToTop" title="Go to top"
-	 style="position: fixed; bottom: 100px; right: 30px; z-index: 99; cursor: pointer; background: linear-gradient(135deg, #6366f1, #a855f7); color: white; width: 56px; height: 56px; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4); display: none; align-items: center; justify-content: center; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px);">
-	<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-		 stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+﻿@ -0,0 +1,34 @@
+﻿<div id="scrollToTop" title="Go to top" style="position: fixed; bottom: 100px; right: 30px; z-index: 99; cursor: pointer; background: linear-gradient(135deg, #6366f1, #a855f7); color: white; width: 56px; height: 56px; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4); display: flex; align-items: center; justify-content: center; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 1px solid rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px);">
+	<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
 		<path d="M17 11l-5-5-5 5M17 18l-5-5-5 5" />
 	</svg>
 </div>
 
 @section Scripts {
 	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			const scrollToTopBtn = document.getElementById('scrollToTop');
-			const scrollToBottomBtn = document.getElementById('scrollToBottom');
+		function setupScrollButton(id, targetTop) {
+			const btn = document.getElementById(id);
+			if (!btn) return;
 
-			function toggleScrollButtons() {
-				const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-				const windowHeight = window.innerHeight;
-				const documentHeight = document.documentElement.scrollHeight;
+			btn.addEventListener('mouseenter', () => {
+				btn.style.transform = 'translateY(-5px) scale(1.05)';
+				btn.style.boxShadow = '0 20px 25px -5px rgba(99, 102, 241, 0.5)';
+			});
 
-				// Show scroll to top if scrolled down more than 100px
-				if (scrollToTopBtn) {
-					if (scrollTop > 100) {
-						scrollToTopBtn.style.display = 'flex';
-					} else {
-						scrollToTopBtn.style.display = 'none';
-					}
-				}
+			btn.addEventListener('mouseleave', () => {
+				btn.style.transform = 'translateY(0) scale(1)';
+				btn.style.boxShadow = '0 10px 25px -5px rgba(99, 102, 241, 0.4)';
+			});
 
-				// Show scroll to bottom if not at bottom
-				if (scrollToBottomBtn) {
-					if (scrollTop + windowHeight < documentHeight - 100) {
-						scrollToBottomBtn.style.display = 'flex';
-					} else {
-						scrollToBottomBtn.style.display = 'none';
-					}
-				}
-			}
-
-			function setupScrollButton(btn, targetTop) {
-				if (!btn) return;
-
-				btn.addEventListener('mouseenter', () => {
-					btn.style.transform = 'translateY(-5px) scale(1.05)';
-					btn.style.boxShadow = '0 20px 25px -5px rgba(99, 102, 241, 0.5)';
+			btn.addEventListener('click', () => {
+				window.scrollTo({
+					top: targetTop === 'bottom' ? document.documentElement.scrollHeight : 0,
+					behavior: 'smooth'
 				});
+			});
+		}
 
-				btn.addEventListener('mouseleave', () => {
-					btn.style.transform = 'translateY(0) scale(1)';
-					btn.style.boxShadow = '0 10px 25px -5px rgba(99, 102, 241, 0.4)';
-				});
-
-				btn.addEventListener('click', () => {
-					window.scrollTo({
-						top: targetTop === 'bottom' ? document.documentElement.scrollHeight : 0,
-						behavior: 'smooth'
-					});
-				});
-			}
-
-			setupScrollButton(scrollToTopBtn, 'top');
-			setupScrollButton(scrollToBottomBtn, 'bottom');
-
-			window.addEventListener('scroll', toggleScrollButtons);
-			toggleScrollButtons(); // Initial check
-		});
+		setupScrollButton('scrollToBottom', 'bottom');
+		setupScrollButton('scrollToTop', 'top');
 	</script>
 }
