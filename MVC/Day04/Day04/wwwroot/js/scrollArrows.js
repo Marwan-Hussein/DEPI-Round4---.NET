@@ -21,7 +21,12 @@ function setupScrollToTop(elementId) {
         }
     });
 
-    
+    // Initial state
+    if (window.scrollY <= 200) {
+        btn.style.opacity = '0';
+        btn.style.transform = 'scale(0.8)';
+        btn.style.pointerEvents = 'none';
+    }
 }
 
 function setupScrollToBottom(elementId) {
@@ -48,5 +53,11 @@ function setupScrollToBottom(elementId) {
         }
     });
 
-    
+    // Initial state
+    const scrolledToBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 200;
+    if (scrolledToBottom) {
+        btn.style.opacity = '0';
+        btn.style.transform = 'scale(0.8)';
+        btn.style.pointerEvents = 'none';
+    }
 }
