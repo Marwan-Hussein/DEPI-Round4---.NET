@@ -1,4 +1,4 @@
-﻿@model List<Department>
+@model List<Department>
 
 <form method="get" action="/Department/ShowDetails" class="d-flex gap-2 align-items-center">
 	<input type="number" name="id" class="form-control" placeholder="Enter Department ID" min="1" required />
@@ -39,5 +39,5 @@
 <a href="/Department/ExtraInfo"> for more info</a>
 
 
-@Html.Partial("ScrollToTopArrow");
-@Html.Partial("ScrollToBottomArrow");
+@Html.Partial("ScrollToTopArrow")
+@Html.Partial("ScrollToBottomArrow")
