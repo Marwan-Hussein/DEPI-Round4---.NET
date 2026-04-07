@@ -56,5 +56,35 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/scrollArrows.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    @*Scrolling Buttons*@
+    <div id="scrollToBottom" class="scroll-btn" title="Go to bottom" style="bottom: 30px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+        </svg>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof setupScrollToBottom === 'function') {
+                setupScrollToBottom('scrollToBottom');
+            }
+        });
+    </script>
+
+    <div id="scrollToTop" class="scroll-btn" title="Go to top" style="bottom: 100px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 11l-5-5-5 5M17 18l-5-5-5 5" />
+        </svg>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof setupScrollToTop === 'function') {
+                setupScrollToTop('scrollToTop');
+            }
+        });
+    </script>
+
 </body>
 </html>
