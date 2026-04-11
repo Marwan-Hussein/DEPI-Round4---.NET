@@ -15,7 +15,7 @@
         <input type="number" name="Age" id="Age" value="@Model?.Age" class="form form-control" />
     </div>
     <select class="form-check form-control">
-        @foreach(var department in ViewBag.Departments)
+        @foreach(var department in Model.)
         {
             <option value="@department.Id">@department.Name</option>
         }
