@@ -14,9 +14,11 @@
         <label>Age</label>
         <input type="number" name="Age" id="Age" value="@Model?.Age" class="form form-control" />
     </div>
-    <div>
-        <label>Department ID</label>
-        <input type="number" name="DepartmentId" id="DepartmentId" value="@Model?.DepartmentId" class="form form-control" />
-    </div>
+    <select class="form-check form-control">
+        @foreach(var department in ViewBag.Departments)
+        {
+            <option value="@department.Id">@department.Name</option>
+        }
+    </select>
     <input type="submit" value="Create" class="btn btn-primary mt-3 mb-3" />
 </form>
