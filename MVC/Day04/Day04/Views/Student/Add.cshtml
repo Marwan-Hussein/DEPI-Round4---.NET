@@ -1,9 +1,14 @@
-﻿@model Student;
+﻿@model StudentDep;
 @{
     ViewData["Title"] = "Add";
 }
 
 <h1>Add</h1>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
 
 <form method="post" action="/Student/SaveAdd">
     <div>
@@ -14,11 +19,15 @@
         <label>Age</label>
         <input type="number" name="Age" id="Age" value="@Model?.Age" class="form form-control" />
     </div>
-    <select class="form-check form-control">
-        @foreach(var department in Model.)
-        {
-            <option value="@department.Id">@department.Name</option>
-        }
-    </select>
+    <div>
+        <label>Department</label>
+        <select name="DepartmentId" id="DepartmentId" class="form-control">
+            <option value="">-- Select a Department --</option>
+            @foreach(var department in Model?.Departments ?? new List<Department>())
+            {
+                <option value="@department.Id">@department.Name</option>
+            }
+        </select>
+    </div>
     <input type="submit" value="Create" class="btn btn-primary mt-3 mb-3" />
 </form>

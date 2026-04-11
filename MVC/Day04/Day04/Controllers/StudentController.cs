@@ -1,5 +1,6 @@
 using Day04.Business_Logic;
 using Day04.Models;
+using Day04.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Day04.Controllers
@@ -23,18 +24,41 @@ namespace Day04.Controllers
         }
 
         [HttpGet]
-        public IActionResult Add() => View("Add");
+        public IActionResult Add()
+        {
+            DepartmentBL departmentBL = new();
+            IGetable<Department> getable = departmentBL;
+            var departments = getable.GetAll();
+
+            var viewModel = new StudentDep
+            {
+                Departments = departments
+            };
+
+            return View("Add", viewModel);
+        }
 
         [HttpPost]
-        public IActionResult SaveAdd(Student std)
+        public IActionResult SaveAdd(StudentDep viewModel)
         {
-            if(std.Name == null || std.Age <= 0 || std.DepartmentId < 1)
+            if (viewModel.Name == null || viewModel.Age <= 0 || viewModel.DepartmentId < 1)
             {
                 ViewBag.Error = "Invalid input. Please fill all fields correctly.";
-                return View("Add");
+                DepartmentBL departmentBL = new();
+                IGetable<Department> getable = departmentBL;
+                viewModel.Departments = getable.GetAll();
+                return View("Add", viewModel);
             }
 
-            studentBL.Add(std);
+            // Create a Student object from the ViewModel
+            var student = new Student
+            {
+                Name = viewModel.Name,
+                Age = viewModel.Age,
+                DepartmentId = viewModel.DepartmentId
+            };
+
+            studentBL.Add(student);
             return RedirectToAction(nameof(Index));
         }
 
