@@ -1,6 +1,9 @@
 using Day04.Business_Logic;
 using Day04.Models;
 using Day04.ViewModels;
+
+using System.Linq;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Day04.Controllers
@@ -12,7 +15,11 @@ namespace Day04.Controllers
         public IActionResult Index() // => default action
         {
             IGetable<Student> getable = new StudentBL();
-            return View("Index", getable.GetAll());
+            return View("Index", 
+                getable.GetAll()
+                .OrderBy(s => s.Department.Name)
+                .ThenBy(s => s.Name)
+                );
         }
 
         // Student/ShowDetails?id=5
