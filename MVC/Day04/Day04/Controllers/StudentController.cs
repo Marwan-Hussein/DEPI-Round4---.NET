@@ -18,7 +18,9 @@ namespace Day04.Controllers
             return View("Index", 
                 getable.GetAll()
                 .OrderBy(s => s.Department.Name)
+                .ThenByDescending(s => s.Age)
                 .ThenBy(s => s.Name)
+                .ToList()
                 );
         }
 
