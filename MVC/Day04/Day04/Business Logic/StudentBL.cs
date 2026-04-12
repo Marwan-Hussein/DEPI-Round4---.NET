@@ -30,5 +30,11 @@ namespace Day04.Business_Logic
             Context.Students.Add(student);
             Context.SaveChanges();
         }
+
+        public void Edit(Student student)
+        {
+            Context.Students.Update(student);
+            Context.SaveChanges();
+        }
     }
 }

@@ -32,6 +32,7 @@ namespace Day04.Controllers
             return View("ShowDetails", student);  // student may be null; view handles it
         }
 
+        #region Add life cycle
         [HttpGet]
         public IActionResult Add()
         {
@@ -70,6 +71,52 @@ namespace Day04.Controllers
             studentBL.Add(student);
             return RedirectToAction(nameof(Index));
         }
+        #endregion
+
+        #region Edit life cycle
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            IGetable<Student> getable = studentBL;
+            var student = getable.GetById(id);
+            if (student == null) 
+                return NotFound();
+            DepartmentBL departmentBL = new();
+            IGetable<Department> deptGetable = departmentBL;
+            var departments = deptGetable.GetAll();
+            var viewModel = new StudentDepVM
+            {
+                Id = student.Id,
+                Name = student.Name,
+                Age = student.Age,
+                DepartmentId = student.DepartmentId,
+                Departments = departments
+            };
+            return View("Edit", viewModel);
+        }
+
+        [HttpPost]
+        public IActionResult SaveEdit(StudentDepVM viewModel)
+        {
+            if (viewModel.Name == null || viewModel.Age <= 15 || viewModel.DepartmentId < 1)
+            {
+                ViewBag.Error = "Invalid input. Please fill all fields correctly.";
+                DepartmentBL departmentBL = new();
+                IGetable<Department> getable = departmentBL;
+                viewModel.Departments = getable.GetAll();
+                return View("Edit", viewModel);
+            }
+            var newStudent = new Student
+            {
+                Id = viewModel.Id,
+                Name = viewModel.Name,
+                Age = viewModel.Age,
+                DepartmentId = viewModel.DepartmentId
+            };
+            studentBL.Edit(newStudent);
+            return RedirectToAction(nameof(Index));
+        }
+        #endregion
 
     }
 }
