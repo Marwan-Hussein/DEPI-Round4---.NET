@@ -1,4 +1,4 @@
-﻿@model StudentDep;
+﻿@model StudentDepVM;
 @{
     ViewData["Title"] = "Add";
 }
@@ -22,10 +22,11 @@
     <div>
         <label>Department</label>
         <select name="DepartmentId" id="DepartmentId" class="form-control">
-            <option value="">-- Select a Department --</option>
             @foreach(var department in Model?.Departments ?? new List<Department>())
             {
-                <option value="@department.Id">@department.Name</option>
+                <option value="@department.Id" selected="@department.Id == @Model.DepartmentId">
+                    @department.Name
+                </option>
             }
         </select>
     </div>

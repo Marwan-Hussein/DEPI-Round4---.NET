@@ -30,7 +30,7 @@ namespace Day04.Controllers
             IGetable<Department> getable = departmentBL;
             var departments = getable.GetAll();
 
-            var viewModel = new StudentDep
+            var viewModel = new StudentDepVM
             {
                 Departments = departments
             };
@@ -39,7 +39,7 @@ namespace Day04.Controllers
         }
 
         [HttpPost]
-        public IActionResult SaveAdd(StudentDep viewModel)
+        public IActionResult SaveAdd(StudentDepVM viewModel)
         {
             if (viewModel.Name == null || viewModel.Age <= 0 || viewModel.DepartmentId < 1)
             {

@@ -2,7 +2,7 @@
 
 namespace Day04.ViewModels
 {
-    public class StudentDep
+    public class StudentDepVM
     {
         // Student
         public string Name { get; set; }
