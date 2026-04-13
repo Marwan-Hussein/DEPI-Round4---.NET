@@ -1,0 +1,36 @@
+﻿@model StudentDepVM
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+<h1>Edit</h1>
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+<form method="post" action="/Student/SaveEdit">
+    <div>
+        <input type="hidden" name="Id" value="@Model?.Id" />
+    </div>
+    <div>
+        <label>Name</label>
+        <input type="text" name="Name" id="Name" value="@Model?.Name" class="form form-control" />
+    </div>
+    <div>
+        <label>Age</label>
+        <input type="number" name="Age" id="Age" value="@Model?.Age" class="form form-control" />
+    </div>
+    <div>
+        <label>Department</label>
+        <select name="DepartmentId" id="DepartmentId" class="form-control">
+            @foreach (var department in Model?.Departments ?? new List<Department>())
+            {
+                <option value="@department.Id" selected="@department.Id == @Model.DepartmentId">
+                    @department.Name
+                </option>
+            }
+        </select>
+    </div>
+    <input type="submit" value="Create" class="btn btn-primary mt-3 mb-3" />
+</form>
