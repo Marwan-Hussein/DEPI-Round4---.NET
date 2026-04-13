@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Reflection;
-using Day04.Models;
-using Day04.Data.Configurations;
-namespace Day04.Data.DbContexts
+using Day05.Models;
+using Day05.Data.Configurations;
+namespace Day05.Data.DbContexts
 {
     public class CollegeSystemDbContext : DbContext
     {
@@ -11,7 +11,7 @@ namespace Day04.Data.DbContexts
         {
             optionsBuilder.UseSqlServer(
                 "Server = .; Database = CollegeSystem; Trusted_Connection = True;TrustServerCertificate=True;"
-                , b => b.MigrationsAssembly("Day04")
+                , b => b.MigrationsAssembly("Day05")
                 );
         }
         public DbSet<Student> Students { get; set; }

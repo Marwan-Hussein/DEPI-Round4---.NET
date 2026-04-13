@@ -1,4 +1,4 @@
-namespace Day04.Models
+namespace Day05.Models
 {
     public class ErrorViewModel
     {

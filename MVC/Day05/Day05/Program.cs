@@ -1,9 +1,9 @@
-using Day04.Data;
-using Day04.Data.DbContexts;
-using Day04.Models;
+using Day05.Data;
+using Day05.Data.DbContexts;
+using Day05.Models;
 using System.Net;
 
-namespace Day04
+namespace Day05
 {
     public class Program
     {

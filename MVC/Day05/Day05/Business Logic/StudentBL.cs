@@ -1,9 +1,9 @@
-using Day04.Data.DbContexts;
-using Day04.Models;
+using Day05.Data.DbContexts;
+using Day05.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Day04.Business_Logic
+namespace Day05.Business_Logic
 {
     public class StudentBL : IGetable<Student>
     {

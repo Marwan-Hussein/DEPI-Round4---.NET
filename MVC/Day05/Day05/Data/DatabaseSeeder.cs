@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Day04.Data.DbContexts;
-using Day04.Models;
+using Day05.Data.DbContexts;
+using Day05.Models;
 
-namespace Day04.Data
+namespace Day05.Data
 {
     public static class DatabaseSeeder
     {

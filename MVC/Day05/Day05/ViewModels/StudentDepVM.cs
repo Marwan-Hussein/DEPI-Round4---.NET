@@ -1,6 +1,6 @@
-﻿using Day04.Models;
+﻿using Day05.Models;
 
-namespace Day04.ViewModels
+namespace Day05.ViewModels
 {
     public class StudentDepVM
     {

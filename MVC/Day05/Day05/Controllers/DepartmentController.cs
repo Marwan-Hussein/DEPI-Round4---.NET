@@ -1,9 +1,9 @@
-using Day04.Business_Logic;
-using Day04.Models;
-using Day04.ViewModels;
+using Day05.Business_Logic;
+using Day05.Models;
+using Day05.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Day04.Controllers
+namespace Day05.Controllers
 {
     public class DepartmentController : Controller
     {

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Day04.Migrations
+namespace Day05.Migrations
 {
     /// <inheritdoc />
     public partial class InitializingModelsWithConfigurations : Migration

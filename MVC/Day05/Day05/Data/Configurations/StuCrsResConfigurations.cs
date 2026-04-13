@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Day04.Models;
+using Day05.Models;
 
-namespace Day04.Data.Configurations
+namespace Day05.Data.Configurations
 {
     public class StuCrsResConfigurations : IEntityTypeConfiguration<StuCrsRes>
     {

@@ -1,8 +1,8 @@
-using Day04.Models;
+using Day05.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Day04.Controllers
+namespace Day05.Controllers
 {
     public class HomeController : Controller
     {
