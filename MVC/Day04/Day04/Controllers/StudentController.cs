@@ -144,6 +144,7 @@ namespace Day04.Controllers
                 Name = student.Name,
                 Age = student.Age,
                 DepartmentId = student.DepartmentId,
+                Department = student.Department,
                 Departments = departments
             };
         }
