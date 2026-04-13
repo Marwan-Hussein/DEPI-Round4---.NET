@@ -125,6 +125,18 @@ namespace Day04.Controllers
             var emp = getable.GetById(id);
             return View("Delete", emp);
         }
+
+        [HttpPost]
+        public IActionResult ConfirmDelete(int id)
+        {
+            IGetable<Student> getable = studentBL;
+            var emp = getable.GetById(id);
+            if (emp == null)
+                return NotFound();
+            studentBL.Delete(emp);
+            return RedirectToAction(nameof(Index));
+        }
+
         #endregion
     }
 }
