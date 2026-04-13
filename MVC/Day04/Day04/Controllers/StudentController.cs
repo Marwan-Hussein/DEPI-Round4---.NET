@@ -122,18 +122,18 @@ namespace Day04.Controllers
         public IActionResult Delete(int id)
         {
             IGetable<Student> getable = studentBL;
-            var emp = getable.GetById(id);
-            return View("Delete", emp);
+            var student = getable.GetById(id);
+            return View("Delete", student);
         }
 
         [HttpPost]
         public IActionResult ConfirmDelete(int id)
         {
             IGetable<Student> getable = studentBL;
-            var emp = getable.GetById(id);
-            if (emp == null)
+            var student = getable.GetById(id);
+            if (student == null)
                 return NotFound();
-            studentBL.Delete(emp);
+            studentBL.Delete(student);
             return RedirectToAction(nameof(Index));
         }
 

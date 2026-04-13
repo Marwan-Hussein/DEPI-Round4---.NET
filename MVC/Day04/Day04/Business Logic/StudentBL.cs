@@ -36,5 +36,11 @@ namespace Day04.Business_Logic
             Context.Students.Update(student);
             Context.SaveChanges();
         }
+
+        public void Delete(Student student)
+        {
+            Context.Students.Remove(student);
+            Context.SaveChanges();  
+        }
     }
 }
