@@ -1,0 +1,28 @@
+@using Day04.ViewModels;
+@model List<DepartmentWithExtraInfoVM>
+@{
+	ViewData["Title"] = "ExtraInfo";
+}
+
+<h1 class="mb-3"><u>Departments More Info:</u></h1>
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div class="row align-items-center mb-3">
+            <div class="col-md-4">
+                <h6 class="mb-0">@item.DepName | @item.State</h6>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select">
+                    @foreach (var name in item.StudentsEx25)
+                    {
+                        <option>@name</option>
+                    }
+                </select>
+            </div>
+        </div>
+        <hr />
+    }
+
+</div>

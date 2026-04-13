@@ -1,0 +1,25 @@
+﻿@model StudentDepVM
+@{
+    ViewData["Title"] = "Delete Student";
+}
+
+<h3>Are you sure to delete this student?</h3>
+
+<div class="mt-2 mb-2">
+    <label>Name</label>
+    <input type="text" name="Name" id="Name" value="@Model?.Name" class="form form-control" disabled />
+</div>
+<div class="mt-2 mb-2">
+    <label>Age</label>
+    <input type="number" name="Age" id="Age" value="@Model?.Age" class="form form-control" disabled />
+</div>
+<div class="mt-2 mb-2">
+    <label>Department</label>
+    <input type="text" name="Department" id="Department" value="@Model?.Department.Name" class="form form-control" disabled />
+</div>
+
+<form asp-action="ConfirmDelete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
