@@ -77,21 +77,9 @@ namespace Day04.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
-            IGetable<Student> getable = studentBL;
-            var student = getable.GetById(id);
-            if (student == null) 
+            var viewModel = GetStudentDepVM(id);
+            if(viewModel == null)
                 return NotFound();
-            DepartmentBL departmentBL = new();
-            IGetable<Department> deptGetable = departmentBL;
-            var departments = deptGetable.GetAll();
-            var viewModel = new StudentDepVM
-            {
-                Id = student.Id,
-                Name = student.Name,
-                Age = student.Age,
-                DepartmentId = student.DepartmentId,
-                Departments = departments
-            };
             return View("Edit", viewModel);
         }
 
@@ -121,9 +109,10 @@ namespace Day04.Controllers
         #region Delete student
         public IActionResult Delete(int id)
         {
-            IGetable<Student> getable = studentBL;
-            var student = getable.GetById(id);
-            return View("Delete", student);
+            var viewModel = GetStudentDepVM(id);
+            if(viewModel == null)
+                return NotFound();
+            return View("Delete", viewModel);
         }
 
         [HttpPost]
@@ -137,6 +126,27 @@ namespace Day04.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        #endregion
+
+        #region helpers
+        public StudentDepVM GetStudentDepVM(int id)
+        {
+            IGetable<Student> getable = studentBL;
+            var student = getable.GetById(id);
+            if (student == null)
+                return null;
+            DepartmentBL departmentBL = new();
+            IGetable<Department> deptGetable = departmentBL;
+            var departments = deptGetable.GetAll();
+            return new StudentDepVM
+            {
+                Id = student.Id,
+                Name = student.Name,
+                Age = student.Age,
+                DepartmentId = student.DepartmentId,
+                Departments = departments
+            };
+        }
         #endregion
     }
 }
