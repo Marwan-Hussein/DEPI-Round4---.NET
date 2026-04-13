@@ -12,7 +12,7 @@
 		<th>Age</th>
 		<th>Department</th>
 		<th></th>
-		@* <th></th> *@
+		<th></th>
 	</tr>
 
 	@foreach (var item in Model)
@@ -23,7 +23,7 @@
 			<td>@item.Age </td>
 			<td>@item.Department.Name </td>
 			<td><a href="/Student/Edit/@item.Id">✏️</a></td>
-			@* <td><a asp-action="Delete" asp-route="@item.Id">🗑️</a></td> *@
+			<td><a href="/Student/Delete/@item.Id" class="btn btn-danger">🗑️</a></td>
 
 		</tr>
     }
