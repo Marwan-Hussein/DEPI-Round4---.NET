@@ -4,11 +4,20 @@
 }
 
 <h3>Are you sure to delete this student?</h3>
+
 <div>
-    <p>Name: @Model.Name</p>
-    <p>Age: @Model.Age</p>
-    <p>Department: @Model.Department.Name</p>
+    <label>Name</label>
+    <input type="text" name="Name" id="Name" value="@Model?.Name" class="form form-control" disabled />
 </div>
+<div>
+    <label>Age</label>
+    <input type="number" name="Age" id="Age" value="@Model?.Age" class="form form-control" disabled />
+</div>
+<div>
+    <label>Department</label>
+    <input type="text" name="Department" id="Department" value="@Model?.Department.Name" class="form form-control" disabled />
+</div>
+
 <form asp-action="ConfirmDelete" method="post">
     <input type="hidden" asp-for="Id" />
     <button type="submit" class="btn btn-danger">Delete</button>
