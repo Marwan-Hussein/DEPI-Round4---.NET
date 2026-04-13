@@ -118,5 +118,13 @@ namespace Day04.Controllers
         }
         #endregion
 
+        #region Delete student
+        public IActionResult Delete(int id)
+        {
+            IGetable<Student> getable = studentBL;
+            var emp = getable.GetById(id);
+            return View("Delete", emp);
+        }
+        #endregion
     }
 }
