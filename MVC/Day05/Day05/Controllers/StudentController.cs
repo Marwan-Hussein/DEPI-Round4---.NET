@@ -12,16 +12,49 @@ namespace Day05.Controllers
     {
         StudentBL studentBL = new();
         // Student/Index
-        public IActionResult Index() // => default action
+        public IActionResult Index(int page = 1, string searchName = "", int? departmentId = null)
         {
+            if (page < 1) page = 1;
+            int pageSize = 5;
             IGetable<Student> getable = new StudentBL();
-            return View("Index", 
-                getable.GetAll()
+            var query = getable.GetAll().AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchName))
+            {
+                query = query.Where(s => s.Name.Contains(searchName, StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (departmentId.HasValue && departmentId.Value > 0)
+            {
+                query = query.Where(s => s.DepartmentId == departmentId.Value);
+            }
+
+            int totalItems = query.Count();
+            int totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+            
+            var students = query
                 .OrderBy(s => s.Department.Name)
                 .ThenByDescending(s => s.Age)
                 .ThenBy(s => s.Name)
-                .ToList()
-                );
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            DepartmentBL departmentBL = new();
+            IGetable<Department> deptGetable = departmentBL;
+            var departments = deptGetable.GetAll();
+
+            var viewModel = new StudentIndexVM
+            {
+                Students = students,
+                Departments = departments,
+                CurrentPage = page,
+                TotalPages = totalPages,
+                SearchName = searchName,
+                DepartmentId = departmentId
+            };
+
+            return View("Index", viewModel);
         }
 
         // Student/ShowDetails?id=5
@@ -51,9 +84,8 @@ namespace Day05.Controllers
         [HttpPost]
         public IActionResult SaveAdd(StudentDepVM viewModel)
         {
-            if (viewModel.Name == null || viewModel.Age <= 0 || viewModel.DepartmentId < 1)
+            if (!ModelState.IsValid)
             {
-                ViewBag.Error = "Invalid input. Please fill all fields correctly.";
                 DepartmentBL departmentBL = new();
                 IGetable<Department> getable = departmentBL;
                 viewModel.Departments = getable.GetAll();
@@ -86,9 +118,8 @@ namespace Day05.Controllers
         [HttpPost]
         public IActionResult SaveEdit(StudentDepVM viewModel)
         {
-            if (viewModel.Name == null || viewModel.Age <= 15 || viewModel.DepartmentId < 1)
+            if (!ModelState.IsValid)
             {
-                ViewBag.Error = "Invalid input. Please fill all fields correctly.";
                 DepartmentBL departmentBL = new();
                 IGetable<Department> getable = departmentBL;
                 viewModel.Departments = getable.GetAll();

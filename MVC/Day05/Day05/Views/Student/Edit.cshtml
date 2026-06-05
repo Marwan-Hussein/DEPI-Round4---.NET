@@ -1,4 +1,4 @@
-﻿@model StudentDepVM
+@model StudentDepVM
 @{
     ViewData["Title"] = "Edit Student";
 }
@@ -9,28 +9,29 @@
     <div class="alert alert-danger">@ViewBag.Error</div>
 }
 
-<form method="post" action="/Student/SaveEdit">
+<form asp-action="SaveEdit" asp-controller="Student" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
     <div>
-        <input type="hidden" name="Id" value="@Model?.Id" />
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
     <div>
-        <label>Name</label>
-        <input type="text" name="Name" id="Name" value="@Model?.Name" class="form form-control" />
+        <label asp-for="Age"></label>
+        <input asp-for="Age" class="form form-control" />
+        <span asp-validation-for="Age" class="text-danger"></span>
     </div>
     <div>
-        <label>Age</label>
-        <input type="number" name="Age" id="Age" value="@Model?.Age" class="form form-control" />
-    </div>
-    <div>
-        <label>Department</label>
-        <select name="DepartmentId" id="DepartmentId" class="form-control">
-            @foreach (var department in Model?.Departments ?? new List<Department>())
-            {
-                <option value="@department.Id" selected="@department.Id == @Model.DepartmentId">
-                    @department.Name
-                </option>
-            }
+        <label asp-for="DepartmentId"></label>
+        <select asp-for="DepartmentId" asp-items="@(new SelectList(Model?.Departments ?? new List<Department>(), "Id", "Name"))" class="form-control">
+            <option value="">-- Select Department --</option>
         </select>
+        <span asp-validation-for="DepartmentId" class="text-danger"></span>
     </div>
     <input type="submit" value="Update" class="btn btn-primary mt-3 mb-3" />
 </form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

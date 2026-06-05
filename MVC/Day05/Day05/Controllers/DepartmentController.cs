@@ -60,8 +60,15 @@ namespace Day05.Controllers
         [HttpPost]
         public IActionResult SaveAdd(Department dept) 
         { 
-            if(dept.Name == null || departmentBL.Contains(dept.Name))
+            if(!ModelState.IsValid)
                 return View("Add", dept);
+                
+            if(departmentBL.Contains(dept.Name))
+            {
+                ModelState.AddModelError("Name", "Department name already exists");
+                return View("Add", dept);
+            }
+            
             departmentBL.Add(dept);
             return RedirectToAction(nameof(Index));
 
