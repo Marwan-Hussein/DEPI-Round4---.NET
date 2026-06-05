@@ -1,0 +1,15 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Day06.Models;
+
+namespace Day06.Data.Configurations
+{
+    public class DepartmentConfigurations : IEntityTypeConfiguration<Department>
+    {
+        public void Configure(EntityTypeBuilder<Department> Dept)
+        {
+            Dept.ToTable("Departments");
+            Dept.HasKey(d => d.Id);
+        }
+    }
+}
